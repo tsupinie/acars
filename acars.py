@@ -27,13 +27,13 @@ from stdatmos import std_atmosphere_pres
 _epoch = datetime(1970, 1, 1, 0)
 _missing = -9999.0
 _base_url = "https://madis-data.ncep.noaa.gov/madisPublic1/data/point/acars/netcdf/"
-_work_path = "/data/acars-work"
-_output_path = "/data/acars-work"
+_work_path = "/home/tsupinie/acars"
+_output_path = "/data/soundings/http/soundings/acars"
 _time_granularity = 600 # seconds
 
 
 
-def load_meta(meta_fname="airport_info.dat"):
+def load_meta(meta_fname=("%s/airport_info.dat" % os.path.dirname(__file__))):
     """
     load_meta
 
