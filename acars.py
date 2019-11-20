@@ -6,12 +6,21 @@ import numpy as np
 from netCDF4 import Dataset
 
 from datetime import datetime, timedelta
-import urllib2 as urlreq
+
+try:
+    import urllib2 as urlreq
+except ImportError:
+    import urllib.request as urlreq
+
 import re
 import os
 import glob
 import gzip
-from StringIO import StringIO
+
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
 
 from stdatmos import std_atmosphere_pres
 
