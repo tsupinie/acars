@@ -18,17 +18,17 @@ import glob
 import gzip
 
 try:
-    from StringIO import StringIO
+    from BytesIO import BytesIO
 except ImportError:
-    from io import StringIO
+    from io import BytesIO
 
 from stdatmos import std_atmosphere_pres
 
 _epoch = datetime(1970, 1, 1, 0)
 _missing = -9999.0
 _base_url = "https://madis-data.ncep.noaa.gov/madisPublic1/data/point/acars/netcdf/"
-_work_path = "/home/tsupinie/acars"
-_output_path = "/data/soundings/http/soundings/acars"
+_work_path = "/data/acars-work"
+_output_path = "/data/acars-work"
 _time_granularity = 600 # seconds
 
 
@@ -71,7 +71,7 @@ def get_times(marker_path=("%s/markers" % _work_path)):
             os.utime(fname, times)
 
     # Figure out the files and their update times from the MADIS server
-    txt = urlreq.urlopen(_base_url).read()
+    txt = urlreq.urlopen(_base_url).read().decode('utf-8')
     files = re.findall(">([\d]{8}_[\d]{4}).gz<", txt)
     update_times = re.findall("([\d]{2}-[\w]{3}-[\d]{4} [\d]{2}:[\d]{2})", txt)
 
@@ -108,8 +108,8 @@ def dl_profiles(dt, fname):
     url = "%s/%s.gz" % (_base_url, dt.strftime('%Y%m%d_%H%M'))
 
     # Download the file and put the contents in a memory buffer to unzip
-    sio = StringIO(urlreq.urlopen(url).read())
-    gzf = gzip.GzipFile(fileobj=sio)
+    bio = BytesIO(urlreq.urlopen(url).read())
+    gzf = gzip.GzipFile(fileobj=bio)
 
     # Write the unzipped data
     with open(fname, 'wb') as fnc:
