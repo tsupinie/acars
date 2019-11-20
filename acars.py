@@ -32,8 +32,11 @@ _output_path = "/data/soundings/http/soundings/acars"
 _time_granularity = 600 # seconds
 
 
+_meta_path = os.path.dirname(__file__)
+if _meta_path == "":
+    _meta_path = "."
 
-def load_meta(meta_fname=("%s/airport_info.dat" % os.path.dirname(__file__))):
+def load_meta(meta_fname=("%s/airport_info.dat" % _meta_path)):
     """
     load_meta
 
