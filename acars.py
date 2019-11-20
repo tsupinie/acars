@@ -33,7 +33,7 @@ _time_granularity = 600 # seconds
 
 
 
-def load_meta(meta_fname=("%s/airport_info.dat" % _work_path)):
+def load_meta(meta_fname="airport_info.dat"):
     """
     load_meta
 
