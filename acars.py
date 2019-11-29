@@ -18,6 +18,7 @@ import re
 import os
 import glob
 import gzip
+import argparse
 
 try:
     from BytesIO import BytesIO
@@ -29,8 +30,6 @@ from stdatmos import std_atmosphere_pres
 _epoch = datetime(1970, 1, 1, 0)
 _missing = -9999.0
 _base_url = "https://madis-data.ncep.noaa.gov/madisPublic1/data/point/acars/netcdf"
-_work_path = "/home/tsupinie/acars"
-_output_path = "/data/soundings/http/soundings/acars"
 _time_granularity = 600 # seconds
 
 _stdatm = std_atmosphere_pres()
@@ -212,7 +211,7 @@ def load_meta(meta_fname=("%s/airport_info.dat" % _meta_path)):
     return meta_airport
 
 
-def get_times(marker_path=("%s/markers" % _work_path)):
+def get_times(work_path):
     """
     get_times
 
@@ -226,6 +225,8 @@ def get_times(marker_path=("%s/markers" % _work_path)):
     def touch(fname, times=None):
         with open(fname, 'a'):
             os.utime(fname, times)
+
+    marker_path = "%s/markers" % work_path
 
     # Figure out the files and their update times from the MADIS server
     txt = urlreq.urlopen(_base_url).read().decode('utf-8')
@@ -255,7 +256,7 @@ def get_times(marker_path=("%s/markers" % _work_path)):
     return times_to_dl   
 
 
-def dl_profiles(dt):
+def dl_profiles(path, dt):
     """
     dl_profiles
 
@@ -268,7 +269,7 @@ def dl_profiles(dt):
     bio = BytesIO(urlreq.urlopen(url).read())
     gzf = gzip.GzipFile(fileobj=bio)
 
-    fname = "%s/%s.nc" % (_work_path, dt.strftime("%Y%m%d_%H%M"))
+    fname = "%s/%s.nc" % (path, dt.strftime("%Y%m%d_%H%M"))
 
     # Write the unzipped data
     with open(fname, 'wb') as fnc:
@@ -303,28 +304,34 @@ def output_profiles(path, profiles):
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--work-path', dest="work_path", default=".")
+    ap.add_argument('--output-path', dest="output_path", default=".")
+
+    args = ap.parse_args()
+
     meta = load_meta()
 
     print("Retrieving profile times ...")
-    dts = get_times()
+    dts = get_times(args.work_path)
 
     dt_fnames = {}
     print("Downloading profiles ...")
     for dt in dts:
-        dt_fnames[dt] = dl_profiles(dt)
+        dt_fnames[dt] = dl_profiles(args.work_path, dt)
 
         dt_prev = dt - timedelta(hours=1)
         dt_next = dt + timedelta(hours=1)
 
         if dt_prev not in dts:
             try:
-                dt_fnames[dt_prev] = dl_profiles(dt_prev)
+                dt_fnames[dt_prev] = dl_profiles(args.work_path, dt_prev)
             except HTTPError:
                 print("Could not find file for %s" % dt_prev.strftime("%d %b %Y %H%M UTC"))
 
         if dt_next not in dts:
             try:
-                dt_fnames[dt_next] = dl_profiles(dt_next)
+                dt_fnames[dt_next] = dl_profiles(args.work_path, dt_next)
             except HTTPError:
                 print("Could not find file for %s" % dt_next.strftime("%d %b %Y %H%M UTC"))
 
@@ -347,7 +354,7 @@ def main():
         profiles_gran = apply_granularity(profiles_qc, _time_granularity)
 
         print("Dumping files ...")
-        output_profiles(_output_path, profiles_gran)
+        output_profiles(args.output_path, profiles_gran)
 
     for fname in dt_fnames.values():
         os.unlink(fname)
