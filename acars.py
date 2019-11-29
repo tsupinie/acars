@@ -9,8 +9,10 @@ from datetime import datetime, timedelta
 
 try:
     import urllib2 as urlreq
+    from urllib2 import HTTPError
 except ImportError:
     import urllib.request as urlreq
+    from urllib.error import HTTPError
 
 import re
 import os
@@ -26,15 +28,167 @@ from stdatmos import std_atmosphere_pres
 
 _epoch = datetime(1970, 1, 1, 0)
 _missing = -9999.0
-_base_url = "https://madis-data.ncep.noaa.gov/madisPublic1/data/point/acars/netcdf/"
+_base_url = "https://madis-data.ncep.noaa.gov/madisPublic1/data/point/acars/netcdf"
 _work_path = "/home/tsupinie/acars"
 _output_path = "/data/soundings/http/soundings/acars"
 _time_granularity = 600 # seconds
 
+_stdatm = std_atmosphere_pres()
 
 _meta_path = os.path.dirname(__file__)
 if _meta_path == "":
     _meta_path = "."
+
+class ACARSProfile(object):
+    def __init__(self, apid, apcode, valid_dt, **prof_vars):
+        self.apid = apid
+        self.apcode = apcode
+        self.dt = valid_dt
+        self.prof_vars = prof_vars
+
+        self.prof_vars['pressure'] = _stdatm(self.prof_vars['altitude'])
+
+        self._sort()
+
+    def apply_qc(self, meta_airport):
+        # Check for a missing surface height
+        if type(self.prof_vars['altitude'][0]) == type(np.ma.masked):
+            print("Skipping profile: surface height at '%s' is qc'ed" % self.apid)
+            return False
+
+        # Check for distance from the claimed source airport
+        ap_lat = meta_airport[self.apcode]['lat']
+        ap_lon = meta_airport[self.apcode]['lon']
+
+        dist = np.hypot(ap_lat - self.prof_vars['latitude'], ap_lon - self.prof_vars['longitude'])
+        if dist.min() > 1:
+            print("Skipping profile: claims to be from '%s', but data are too far away" % self.apid)
+            return False
+      
+        # Remove duplicate heights or out-of-order pressures
+        bad_hghts = np.append(False, np.isclose(np.diff(self.prof_vars['altitude']), 0))
+        bad_press = np.append(False, np.diff(self.prof_vars['pressure']) >= 0)
+        keep = np.where(~(bad_hghts | bad_press))
+        
+        for var, val in self.prof_vars.items():
+            self.prof_vars[var] = val[keep]
+ 
+        # Check for number of data points
+        if len(self.prof_vars['altitude']) < 3:
+            return False
+        
+        return True
+
+    def append(self, other):
+        if self.apid != other.apid or self.dt != other.dt:
+            raise ValueError("Profile id and time in append() must be the same")
+
+        for var, vals in other.prof_vars.items():
+            self.prof_vars[var] = np.ma.append(self.prof_vars[var], vals)
+
+        self._sort()
+
+    def _sort(self):
+        sort_idxs = np.argsort(self.prof_vars['altitude'])
+        for var, vals in self.prof_vars.items():
+            self.prof_vars[var] = vals[sort_idxs]
+
+    def to_spc(self, path):
+        # Fill any qc'ed values with the missing value
+        pres_prof = (self.prof_vars['pressure'] / 100.).filled(_missing)
+        hght_prof = self.prof_vars['altitude'].filled(_missing)
+        tmpk_prof = (self.prof_vars['temperature'] - 273.15).filled(_missing)
+        dwpk_prof = (self.prof_vars['dewpoint'] - 273.15).filled(_missing)
+        wdir_prof = self.prof_vars['windDir'].filled(_missing)
+        wspd_prof = (self.prof_vars['windSpeed'] * 1.94).filled(_missing)
+
+        # Create the text output
+        snd_lines = [
+            "%TITLE%",
+            "%s   %s" % (self.apid.rjust(5), self.dt.strftime('%y%m%d/%H%M')),
+            "",
+            "   LEVEL       HGHT       TEMP       DWPT       WDIR       WSPD",
+            "-------------------------------------------------------------------",
+            "%RAW%"
+        ]
+
+        for pres, hght, tmpk, dwpk, wdir, wspd in zip(pres_prof, hght_prof, tmpk_prof, dwpk_prof, wdir_prof, wspd_prof):
+            ob_str = "% 8.2f, % 9.2f, % 9.2f, % 9.2f, % 9.2f, % 9.2f" % (pres, hght, tmpk, dwpk, wdir, wspd)
+            snd_lines.append(ob_str)
+        snd_lines.append('%END%')
+        snd_str = "\n".join(snd_lines)
+
+        # Construct the file name (using the time granularity)
+        dt_sec = round((self.dt - _epoch).total_seconds() / _time_granularity) * _time_granularity
+        dt_round = _epoch + timedelta(seconds=dt_sec)
+        tree_path = "%s/%s" % (path, dt_round.strftime("%Y/%m/%d/%H"))
+        fname = "%s/%s_%s.txt" % (tree_path, self.apid, dt_round.strftime("%H%M"))
+
+        try:
+            os.makedirs(tree_path)
+        except OSError:
+            pass    
+
+        exist_size = os.path.getsize(fname) if os.path.exists(fname) else 0
+
+        # Check for a smaller file that already exists. The idea is to avoid writing over a "good" file with a "bad" file,
+        #   where file size is used as a proxy for "goodness". This may not be the best proxy, though.
+        if len(snd_str) < exist_size:
+            print("Skipping profile: refusing to overwrite existing '%s' with a smaller file" % fname)
+        else:
+            with open(fname, 'w') as fsnd:
+                fsnd.write(snd_str)
+
+
+def load_profiles(fname, supplemental, meta_airport):
+    def _load_profiles(fname):
+        load_vars = ['temperature', 'dewpoint', 'soundingSecs', 'sounding_airport_id', 'latitude', 'longitude',
+                     'windSpeed', 'windDir', 'altitude']
+
+        nc = Dataset(fname)
+        profile_data = {var: nc.variables[var][:] for var in load_vars}
+        nc.close()
+
+        # Split the profile arrays wherever the valid time changes. I guess this will mess up if two adjacent profiles
+        #   happen to be valid at the same time, but I'm not sure that throws out too many good profiles.
+        splits = np.where(np.diff(profile_data['soundingSecs']))[0] + 1
+
+        profile_data_split = {var: np.split(prof_var, splits) for var, prof_var in profile_data.items()}
+
+        profiles = []
+        for vals in zip(*(profile_data_split[var] for var in load_vars)):
+            val_dict = dict(zip(load_vars, vals))
+
+            if type(val_dict['soundingSecs'][0]) == type(np.ma.masked):
+                continue
+
+            time = val_dict.pop('soundingSecs')
+            apid = val_dict.pop('sounding_airport_id')
+
+            prof_dt = _epoch + timedelta(seconds=time[0])
+            try:
+                prof_id = meta_airport[apid[0]]['id']
+            except KeyError:
+                continue
+
+            prof = ACARSProfile(prof_id, apid[0], prof_dt, **val_dict)
+            profiles.append(prof)
+
+        return profiles
+
+    profiles = _load_profiles(fname)
+
+    for fname in supplemental:
+        supp_profiles = _load_profiles(fname)
+
+        for supp_prof in supp_profiles:
+            for prof in profiles:
+                if supp_prof.apid == prof.apid and supp_prof.dt == prof.dt:
+                    prof.append(supp_prof)
+                    break
+
+    return profiles
+
 
 def load_meta(meta_fname=("%s/airport_info.dat" % _meta_path)):
     """
@@ -101,7 +255,7 @@ def get_times(marker_path=("%s/markers" % _work_path)):
     return times_to_dl   
 
 
-def dl_profiles(dt, fname):
+def dl_profiles(dt):
     """
     dl_profiles
 
@@ -114,186 +268,38 @@ def dl_profiles(dt, fname):
     bio = BytesIO(urlreq.urlopen(url).read())
     gzf = gzip.GzipFile(fileobj=bio)
 
+    fname = "%s/%s.nc" % (_work_path, dt.strftime("%Y%m%d_%H%M"))
+
     # Write the unzipped data
     with open(fname, 'wb') as fnc:
         fnc.write(gzf.read())
 
+    return fname
 
-def load_profiles(fname):
-    """
-    load_profiles
 
-    Load netCDF files and put the data into data structures. The data for each variable are in one array containing
-    every ob for every profile, so we have to split the arrays up into distinct profiles ourselves. We also enforce the
-    time granularity on the profile valid times (not the obs within a single profile) here.
-    """
-    stdatm = std_atmosphere_pres()
-
-    load_vars = ['temperature', 'dewpoint', 'soundingSecs', 'sounding_airport_id', 'latitude', 'longitude',
-                 'windSpeed', 'windDir', 'altitude']
-
-    nc = Dataset(fname)
-    profile_data = {var: nc.variables[var][:] for var in load_vars}
-    nc.close()
-
-    # Split the profile arrays wherever the valid time changes. I guess this will mess up if two adjacent profiles
-    #   happen to be valid at the same time, but I'm not sure that throws out too many good profiles.
-    splits = np.where(np.diff(profile_data['soundingSecs']))[0] + 1
-
-    profile_data_split = {var: np.split(prof_var, splits) for var, prof_var in profile_data.items()}
-    profiles = [{} for prof in profile_data_split['soundingSecs']]
-    for var, prof_var in profile_data_split.items():
-        for prof, split_prof in zip(profiles, prof_var):
-            prof[var] = split_prof
-
-    for prof in profiles:
-        # The sensed altitude variable is pressure. The heights are computed from pressure using a standard atmosphere,
-        #   but then they don't give pressure for some reason, so we need to get the pressures back from heights
-        prof['pressure'] = stdatm(prof['altitude'])
-
+def apply_granularity(profiles, granularity):
     # Enforce the granularity on the profile valid times. The granularity is set by _time_granularity above.
     unique_profiles = {}
     for profile in profiles:
-        ap_code = profile['sounding_airport_id'][0]
-        snd_time = profile['soundingSecs'][0]
-    
-        if type(ap_code) == type(np.ma.masked) or type(snd_time) == type(np.ma.masked):
-            continue
-        
-        snd_time = _time_granularity * np.round(snd_time / _time_granularity)
+        ap_code = profile.apid
+        snd_time = (profile.dt - _epoch).total_seconds()
+
+        snd_time = _time_granularity * np.round(snd_time / granularity)
         key = (snd_time, ap_code)
-        if key not in unique_profiles or len(unique_profiles[key]['soundingSecs']) < len(profile['soundingSecs']):
+        if key not in unique_profiles or len(unique_profiles[key].prof_vars['altitude']) < len(profile.prof_vars['altitude']):
             unique_profiles[key] = profile
         
-    profiles = list(unique_profiles.values())
-    return profiles
+    return list(unique_profiles.values())
 
 
-def output_profile(path, profile, meta_airport):
-    """
-    output_profile
-
-    Write a single profile out to a file on disk in the SPC text format. Several quality control items are done in this
-    method.
-    1) If the airport code is missing, ignore the profile.
-    2) If the profile's airport code doesn't exist in our database, ignore the profile.
-    3) If the surface height is missing, ignore the profile. (This gives SHARPpy problems.)
-    4) If the profile's lat/lon data are too far away from the airport it claims to be from, ignore the profile.
-    5) If the profile has fewer than 3 data points, ignore the profile.
-    6) If there's already a file with the same name on disk and this profile would produce a smaller file, ignore the
-        profile.
-    7) Remove obs that create duplicate height values or out-of-order pressure values (which also give SHARPpy issues).
-    """
-
-    # Check for a missing airport code
-    code = profile['sounding_airport_id'][0]
-    if type(code) == type(np.ma.masked):
-        return
-
-    # Check for an airport code that's not in the database
-    try:
-        apid = meta_airport[code]['id']
-    except KeyError:
-        print("Skipping profile: unknown airport code '%d'" % code)
-        return
-
-    # Check for a missing surface height
-    if type(profile['altitude'][0]) == type(np.ma.masked):
-        print("Skipping profile: surface height at '%s' is qc'ed" % apid)
-        return
-
-    # Check for distance from the claimed source airport
-    ap_lat = meta_airport[code]['lat']
-    ap_lon = meta_airport[code]['lon']
-
-    dist = np.hypot(ap_lat - profile['latitude'], ap_lon - profile['longitude'])
-    if dist.min() > 1:
-        print("Skipping profile: claims to be from '%s', but data are too far away" % apid)
-        return
-
-    # Get a datetime object with the profile time
-    dt = _epoch + timedelta(seconds=float(profile['soundingSecs'][0]))
-
-    # Fill any qc'ed values with the missing value
-    pres_prof = profile['pressure'].filled(_missing)
-    hght_prof = profile['altitude'].filled(_missing)
-    tmpk_prof = profile['temperature'].filled(_missing)
-    dwpk_prof = profile['dewpoint'].filled(_missing)
-    wdir_prof = profile['windDir'].filled(_missing)
-    wspd_prof = profile['windSpeed'].filled(_missing)
-    
-    # Sort by height
-    sort_idxs = np.argsort(hght_prof)
-    pres_prof = pres_prof[sort_idxs]
-    hght_prof = hght_prof[sort_idxs]
-    tmpk_prof = tmpk_prof[sort_idxs]
-    dwpk_prof = dwpk_prof[sort_idxs]
-    wdir_prof = wdir_prof[sort_idxs]
-    wspd_prof = wspd_prof[sort_idxs]
-    
-    # Remove duplicate heights or out-of-order pressures
-    bad_hghts = np.append(False, np.isclose(np.diff(hght_prof), 0))
-    bad_press = np.append(False, np.diff(pres_prof) >= 0)
-    
-    keep = np.where(~(bad_hghts | bad_press))
-    pres_prof = pres_prof[keep]
-    hght_prof = hght_prof[keep]
-    tmpk_prof = tmpk_prof[keep]
-    dwpk_prof = dwpk_prof[keep]
-    wdir_prof = wdir_prof[keep]
-    wspd_prof = wspd_prof[keep]
-    
-    # Check for number of data points
-    if len(hght_prof) < 3:
-        return
-
-    # Create the text output
-    snd_lines = [
-        "%TITLE%", 
-        "%s   %s" % (apid.rjust(5), dt.strftime('%y%m%d/%H%M')),
-        "",
-        "   LEVEL       HGHT       TEMP       DWPT       WDIR       WSPD",
-        "-------------------------------------------------------------------",
-        "%RAW%"
-    ]
-    
-    for pres, hght, tmpk, dwpk, wdir, wspd in zip(pres_prof, hght_prof, tmpk_prof, dwpk_prof, wdir_prof, wspd_prof):
-        ob_str = "% 8.2f, % 9.2f, % 9.2f, % 9.2f, % 9.2f, % 9.2f" % (pres / 100., hght, tmpk - 273.15, dwpk - 273.15, 
-                                                                     wdir, wspd * 1.94)
-        snd_lines.append(ob_str)
-    snd_lines.append('%END%')
-
-    # Construct the file name (using the time granularity)
-    dt_sec = round((dt - _epoch).total_seconds() / _time_granularity) * _time_granularity
-    dt_round = _epoch + timedelta(seconds=dt_sec)
-    tree_path = "%s/%s" % (path, dt_round.strftime("%Y/%m/%d/%H"))
-    fname = "%s/%s_%s.txt" % (tree_path, apid, dt_round.strftime("%H%M"))
-
-    try:
-        os.makedirs(tree_path)
-    except OSError:
-        pass    
-
-    snd_str = "\n".join(snd_lines)
-    exist_size = os.path.getsize(fname) if os.path.exists(fname) else 0
-
-    # Check for a smaller file that already exists. The idea is to avoid writing over a "good" file with a "bad" file,
-    #   where file size is used as a proxy for "goodness". This may not be the best proxy, though.
-    if len(snd_str) < exist_size:
-        print("Skipping profile: refusing to overwrite existing '%s' with a smaller file" % fname)
-    else:
-        with open(fname, 'w') as fsnd:
-            fsnd.write(snd_str)
-
-
-def output_profiles(path, profiles, meta):
+def output_profiles(path, profiles):
     """
     output_profiles
 
     Loop and dump out every profile. Not entirely sure this needs to be a separate function, but whatever.
     """
     for profile in profiles:
-        output_profile(path, profile, meta)
+        profile.to_spc(path)
 
 
 def main():
@@ -302,20 +308,48 @@ def main():
     print("Retrieving profile times ...")
     dts = get_times()
 
+    dt_fnames = {}
+    print("Downloading profiles ...")
+    for dt in dts:
+        dt_fnames[dt] = dl_profiles(dt)
+
+        dt_prev = dt - timedelta(hours=1)
+        dt_next = dt + timedelta(hours=1)
+
+        if dt_prev not in dts:
+            try:
+                dt_fnames[dt_prev] = dl_profiles(dt_prev)
+            except HTTPError:
+                print("Could not find file for %s" % dt_prev.strftime("%d %b %Y %H%M UTC"))
+
+        if dt_next not in dts:
+            try:
+                dt_fnames[dt_next] = dl_profiles(dt_next)
+            except HTTPError:
+                print("Could not find file for %s" % dt_next.strftime("%d %b %Y %H%M UTC"))
+
     for dt in dts:
         print("New profiles for %s" % dt.strftime("%H%M UTC %d %b"))
 
-        fname = "%s/%s.nc" % (_work_path, dt.strftime("%Y%m%d_%H%M"))
-
-        print("Downloading profiles ...")
-        dl_profiles(dt, fname)
+        dt_prev = dt - timedelta(hours=1)
+        dt_next = dt + timedelta(hours=1)
 
         print("Parsing profiles ...")
-        profiles = load_profiles(fname)
+        supplemental = []
+        if dt_prev in dt_fnames:
+            supplemental.append(dt_fnames[dt_prev])
+        if dt_next in dt_fnames:
+            supplemental.append(dt_fnames[dt_next])
+        profiles = load_profiles(dt_fnames[dt], supplemental, meta)
+
+        profiles_qc = [ profile for profile in profiles if profile.apply_qc(meta) ]
+
+        profiles_gran = apply_granularity(profiles_qc, _time_granularity)
 
         print("Dumping files ...")
-        output_profiles(_output_path, profiles, meta)
+        output_profiles(_output_path, profiles_gran)
 
+    for fname in dt_fnames.values():
         os.unlink(fname)
 
     print("Done!")
