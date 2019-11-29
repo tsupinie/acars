@@ -30,7 +30,6 @@ from stdatmos import std_atmosphere_pres
 _epoch = datetime(1970, 1, 1, 0)
 _missing = -9999.0
 _base_url = "https://madis-data.ncep.noaa.gov/madisPublic1/data/point/acars/netcdf"
-_time_granularity = 600 # seconds
 
 _stdatm = std_atmosphere_pres()
 
@@ -92,7 +91,7 @@ class ACARSProfile(object):
         for var, vals in self.prof_vars.items():
             self.prof_vars[var] = vals[sort_idxs]
 
-    def to_spc(self, path):
+    def to_spc(self, path, time_granularity):
         # Fill any qc'ed values with the missing value
         pres_prof = (self.prof_vars['pressure'] / 100.).filled(_missing)
         hght_prof = self.prof_vars['altitude'].filled(_missing)
@@ -118,7 +117,7 @@ class ACARSProfile(object):
         snd_str = "\n".join(snd_lines)
 
         # Construct the file name (using the time granularity)
-        dt_sec = round((self.dt - _epoch).total_seconds() / _time_granularity) * _time_granularity
+        dt_sec = round((self.dt - _epoch).total_seconds() / time_granularity) * time_granularity
         dt_round = _epoch + timedelta(seconds=dt_sec)
         tree_path = "%s/%s" % (path, dt_round.strftime("%Y/%m/%d/%H"))
         fname = "%s/%s_%s.txt" % (tree_path, self.apid, dt_round.strftime("%H%M"))
@@ -279,13 +278,12 @@ def dl_profiles(path, dt):
 
 
 def apply_granularity(profiles, granularity):
-    # Enforce the granularity on the profile valid times. The granularity is set by _time_granularity above.
     unique_profiles = {}
     for profile in profiles:
         ap_code = profile.apid
         snd_time = (profile.dt - _epoch).total_seconds()
 
-        snd_time = _time_granularity * np.round(snd_time / granularity)
+        snd_time = granularity * np.round(snd_time / granularity)
         key = (snd_time, ap_code)
         if key not in unique_profiles or len(unique_profiles[key].prof_vars['altitude']) < len(profile.prof_vars['altitude']):
             unique_profiles[key] = profile
@@ -293,20 +291,21 @@ def apply_granularity(profiles, granularity):
     return list(unique_profiles.values())
 
 
-def output_profiles(path, profiles):
+def output_profiles(path, profiles, time_granularity):
     """
     output_profiles
 
     Loop and dump out every profile. Not entirely sure this needs to be a separate function, but whatever.
     """
     for profile in profiles:
-        profile.to_spc(path)
+        profile.to_spc(path, time_granularity)
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--work-path', dest="work_path", default=".")
     ap.add_argument('--output-path', dest="output_path", default=".")
+    ap.add_argument('--time-granularity', dest='time_gran', type=int, default=600)
 
     args = ap.parse_args()
 
@@ -351,10 +350,10 @@ def main():
 
         profiles_qc = [ profile for profile in profiles if profile.apply_qc(meta) ]
 
-        profiles_gran = apply_granularity(profiles_qc, _time_granularity)
+        profiles_gran = apply_granularity(profiles_qc, args.time_gran)
 
         print("Dumping files ...")
-        output_profiles(args.output_path, profiles_gran)
+        output_profiles(args.output_path, profiles_gran, args.time_gran)
 
     for fname in dt_fnames.values():
         os.unlink(fname)
