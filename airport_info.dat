@@ -454,28 +454,28 @@
  2891 AAD  
   590 AAH  42647   23.07   72.63   55 Ahmadabad, IN
  2934 AAL   0     57.09 9.85 3 Aalborg, DK
-  737 AAO      0   37.75  -97.22  432 Wichita/Jabara, KS
+  737 AAO      0   37.75  -97.22  432 Wichita, KS (Jabara Apt.)
  2139 AAS  
   732 AAT      0   41.48 -119.45 1333 Alturas, CA 
  2613 ABA  
   537 ABB      0   19.10   72.80    3 Bombay
  1234 ABC  
- 2249 ABE      0   40.65  -75.44 0120 Lehigh Valley International
+ 2249 ABE      0   40.65  -75.44 0120 Allentown-Bethlehem, PA
  1542 ABH  
     1 ABI  72266   32.42  -99.68 0546 Abilene, TX
   713 ABL      0    0       0  
  1211 ABO  
     2 ABQ  72365   35.05 -106.62 1619 Albuquerque, NM
- 2248 ABR      0   45.45  -98.42 0396 Aberdeen Regional
+ 2248 ABR      0   45.45  -98.42 0396 Aberdeen, SD
     3 ABY  72216   31.53  -84.18 0059 Albany, GA
   551 ACA  76805   16.75  -99.77    5 Acapulco, GR   
   888 ACH  
-    4 ACT  72256   31.62  -97.22 0155 Waco/Mdsn Cooper, TX
+    4 ACT  72256   31.62  -97.22 0155 Waco, TX
  1589 ADW  74594   38.82  -76.87   86 Andrews AFB, MD   
  3130 AEI  
-  601 AEX  74754   31.33  -92.55   27 Alexandria Intl, LA
+  601 AEX  74754   31.33  -92.55   27 Alexandria, LA
   798 AEZ  87576  -34.82  -58.53   20 Buenos Aires, EZ 
-  337 AFA      0   32.98  -97.32  220 Fort Worth/Alliance, TX 
+  337 AFW      0   32.98  -97.32  220 Fort Worth, TX (Alliance Apt.) 
  1780 AFU  
  1866 AFW  
   804 AGS  72218   33.37  -81.97   45 Augusta, GA
@@ -492,13 +492,13 @@
  2833 AKN  70326  58.68  -156.65  15   KING SALMON, AK
   607 AKO      0   40.17 -103.22 1431 Akron, CO 
   527 AKP      0   68.13 -151.73  640 Anaktuvuk Pass, AK 
-  686 AKR      0   41.04  -81.47  325 Akron Fulton Arpt, OH 
+  686 AKR      0   41.04  -81.47  325 Akron, OH (Fulton Apt.)
   446 AKS      0    0       0    
   865 AKT  
  1225 ALA  
     5 ALB  72518   42.75  -73.80 0086 Albany, NY
  2310 ALI  
- 2246 ALO      0   42.56  -92.40 0266 Waterloo Muni
+ 2246 ALO      0   42.56  -92.40 0266 Waterloo, IA
     6 ALS  72462   37.45 -105.87 2299 Alamosa, CO
  1152 ATL  72219   33.65  -84.42 0315 Atlanta, GA
     7 AMA  72363   35.23 -101.70 1094 Amarillo, TX
@@ -510,13 +510,13 @@
     8 ANC  70273   61.17 -150.02 0045 Anchorage Int'L, AK
  2831 ANI  70232  61.59  -159.54  26   ANIAK, AK
  2002 ANU  
-  488 APA      0   39.57 -104.85 1790 Denver/Centennial, CO
- 2245 APN      0   45.08  -83.56 0210 Alpena County Regional
+  488 APA      0   39.57 -104.85 1790 Denver, CO (Centennial Apt.)
+ 2245 APN      0   45.08  -83.56 0210 Alpena, MI
  1911 APR  
   613 ARA      0   30.03  -91.88    7 New Iberia, LA
  2512 ARD  
  1489 ARN  
- 2244 ASE      0   39.22 -106.87 2383 Aspen-Pitkin Co, CO
+ 2244 ASE      0   39.22 -106.87 2383 Aspen, CO
  1807 ASI  
   628 ASP      0    0       0   
  2829 AST  
@@ -528,12 +528,12 @@
  1185 ATT  
  2316 ATV  
   703 ATW      0   44.25  -88.52  280 Appleton, WI 
- 2242 ATY      0   44.91  -97.15 0532 Watertown Muni
+ 2242 ATY      0   44.91  -97.15 0532 Watertown, SD
  1093 AUA  
-  267 AUS  72254   30.20  -97.68  165 Austin/Bergstrom, TX
-  743 AVL  72315   35.43  -82.55  661 Asheville Rgnl, NC 
+  267 AUS  72254   30.20  -97.68  165 Austin, TX
+  743 AVL  72315   35.43  -82.55  661 Asheville, NC 
  1281 AZE  
- 2241 AZO      0   42.23  -85.55 0266 Kalamazoo/Battle Creek International
+ 2241 AZO      0   42.23  -85.55 0266 Kalamazoo/Battle Creek, MI
  1491 BAA  54511   40.08  116.60   35 Beijing/Peking, CI 
  2789 BAD  
   640 BAE      0    0       0  
@@ -559,22 +559,22 @@
  1535 BDA  
  2795 BDD  
  2005 BDJ  
-   11 BDL  72508   41.93  -72.68 0055 Bradley/Hartford, CT
-   12 BDR  72504   41.17  -73.13 0005 Bridgeport/Skrsk, CT
+   11 BDL  72508   41.93  -72.68 0055 Hartford, CT (Bradley Apt.)
+   12 BDR  72504   41.17  -73.13 0005 Bridgeport, CT
  1942 BED  
   695 BEG      0    0       0  
  2123 BEJ  
   851 BEZ  
  2135 BFF  
-   13 BFI  90001   47.53 -122.30 0005 Seattle/Boeing, WA
+   13 BFI  90001   47.53 -122.30 0005 Seattle, WA (Boeing Field)
  1223 BFJ  
-  294 BFM      0   30.63  -88.07    8 Mobile/Brookley, AL
+  294 BFM      0   30.63  -88.07    8 Mobile, AL (Downtown Apt.)
  2293 BFW  
  3047 BFZ  
  2520 BGA  
  1537 BGI  
  2839 BGL  83746  -22.82  -43.25    6 Rio De Janeiro Intl, BZ 
- 2240 BGM      0   42.21  -75.98 0498 Binghamton Regional/Link Field, NY
+ 2240 BGM      0   42.21  -75.98 0498 Binghamton, NY
   742 BGR      0   44.80  -68.83   59 Bangor, ME 
   930 BGSF     0   67.00  -50.90   50 Sondre-Stromfjord
  1947 BGX  
@@ -584,14 +584,14 @@
   702 BIF      0   31.85 -106.38 1204 Biggs AFB, TX
  1964 BIG  
   366 BIKF 04018   63.97  -22.60   54 Reykjavik-Keflavik, Iceland
-   15 BIL  72677   45.80 -108.53 1088 Billings/Logan, MT
+   15 BIL  72677   45.80 -108.53 1088 Billings, MT
   591 BIS  72764   46.77 -100.75  504 Bismarck, ND
- 2238 BJI      0   47.51  -94.93 0423 Bemidji-beltrami County
+ 2238 BJI      0   47.51  -94.93 0423 Bemidji, MN
    16 BJX  26577   21.00 -102.50 1999 Leon-Guanajuato, MX
   776 BKA      0    0       0  
  1713 BKB  
   268 BKK  48456   13.92  100.60 0012 Bangkok/Don Mua, TH
-  661 BKL      0   41.52  -81.68  178 Burke Lakefront, OH
+  661 BKL      0   41.52  -81.68  178 Cleveland, OH (Lakefront Apt.)
   631 BKO  61291   12.53   -7.95  381 Bamako/Senou, Mali
   368 BKP  83721  -23.00  -47.13  661 Sao Paulo-Viracopos, BRAZIL
   369 BKV      0   28.47  -82.45   20 Brooksville, FL
@@ -599,7 +599,7 @@
  2935 BLL   0     55.74 9.15 75 Billund, DK
  1709 BLR  
  1405 BLV  
- 2237 BMI      0   40.48  -88.92 0265 Central Il Regl Arpt, IL
+ 2237 BMI      0   40.48  -88.92 0265 Bloomington, IL
    17 BNA  72327   36.25  -86.57 0180 Nashville, TN
  3121 BNE  
  1779 BO0  
@@ -618,7 +618,7 @@
  1661 BPV  
  2102 BQG  
  2636 BQS  
-  770 BRD      0   46.40  -94.13  374 Brainerd/Crow Wg, MN
+  770 BRD      0   46.40  -94.13  374 Brainerd, MN
  3045 BRF  
  3122 BRR  
   272 BRU  06451   50.90    4.53   58 Brussels National Apt, BX
@@ -627,8 +627,8 @@
   812 BSN  
  3074 BSV  
  2472 BTL      0  -19.25  146.75    9 Townsville
-  633 BTP      0   40.79  -79.95  380 Butler Co, PA 
-  385 BTR      0   30.53  -91.15   21 Baton Rouge/Ryan, LA
+  633 BTP      0   40.79  -79.95  380 Butler, PA 
+  385 BTR      0   30.53  -91.15   21 Baton Rouge, LA
    21 BTV  72617   44.47  -73.15 0104 Burlington, VT
  1222 BUD  
    22 BUE  87585  -34.57  -58.37 0025 Buenos Aires, AG (Unofcl)
@@ -638,17 +638,17 @@
  2768 BVI  
  2756 BWA  
  2542 BWF  
-   25 BWI  72406   39.18  -76.67 0047 Baltimore Intl, MD
+   25 BWI  72406   39.18  -76.67 0047 Baltimore, MD
  2819 BWI0 
  2332 BWJ  
  1570 BXK  
-  694 BYH      0   35.97  -89.95   78 Blytheville AFB, AR
+  694 BYH      0   35.97  -89.95   78 Blytheville, AR
  1712 BZE  
  2729 BZN  
-   26 CAE  72310   33.95  -81.12 0069 Columbia Metro, SC
+   26 CAE  72310   33.95  -81.12 0069 Columbia, SC
  2929 CAG   0     39.25 9.05 3 Cagliari, IT
  3064 CAI  
-  322 CAK  72521   40.92  -81.43  377 Canton/Akron, OH 
+  322 CAK  72521   40.92  -81.43  377 Akron/Canton, OH 
  2319 CAN  
  1685 CBG  
  1414 CBO  
@@ -665,7 +665,7 @@
   276 CDG      0  49.013    2.55  117 Paris Charles De Gaulle, FR
   606 CDL      0    0       0  
  2532 CDQ  
-   28 CEF  74491   42.20  -72.53 0075 Wstvr AFB/Chcpee, MA
+   28 CEF  74491   42.20  -72.53 0075 Westover ARB, MA
  1688 CEL  85574  -33.38  -70.78  476 Santiago/Benitez, Chile 
  1268 CFK  
  1723 CFW  
@@ -674,7 +674,7 @@
  2533 CGG  
   227 CGN  10513   50.87    7.17   99 Koln/Bonn, DL
  1408 CGZ  
- 2233 CHA      0   35.04  -85.20 0207 Lovell Field
+ 2233 CHA      0   35.04  -85.20 0207 Chattanooga, TN
   767 CHB      0    0       0  
  2710 CHL  
  1729 CHN  
@@ -684,12 +684,12 @@
  1165 CIB  
    30 CID  72545   41.88  -91.70 0265 Cedar Rapids, IA
  1244 CIF  
- 2231 CIU      0   46.25  -84.47 0243 Chippewa County Intl
+ 2231 CIU      0   46.25  -84.47 0243 Sault Ste. Marie, MI
  2661 CJS  
  2741 CJU  
   447 CKA      0    0       0  
-  438 CKB       0  39.28  -80.23  366 Clarksburg/Bndum, WV
-  437 CKC       0  47.84  -90.38  548 Grand Marais/Cook County, MN
+  438 CKB       0  39.28  -80.23  366 Clarksburg, WV
+  437 CKC       0  47.84  -90.38  548 Grand Marais, MN
   457 CKD       0  61.87 -158.1  9999 Crooked Creek, AK
   736 CKE  
  1493 CKF  
@@ -701,17 +701,17 @@
   470 CKO       0  
   487 CKP       0  
   399 CKS       0  -6.0   -37.55 0000 Carajas, BR
-   31 CLE  72524   41.42  -81.87 0213 Cleveland/Hopkns, OH
+   31 CLE  72524   41.42  -81.87 0213 Cleveland, OH
   533 CLI  
  1587 CLK      0   34.90   33.70    2 Larnaca 
  1593 CLL  
  1534 CLO  
  1509 CLP  
  1829 CLR  
-   32 CLT  72314   35.22  -80.93 0234 Charlotte/Dougls, NC
+   32 CLT  72314   35.22  -80.93 0234 Charlotte, NC
    33 CMH  72428   40.00  -82.88 0249 Columbus, OH
- 2228 CMI      0   40.04  -88.28 0229 University Of Illinois-willard
- 2227 CMX      0   47.17  -88.49 0333 Houghton County Memorial
+ 2228 CMI      0   40.04  -88.28 0229 Champaign, IL
+ 2227 CMX      0   47.17  -88.49 0333 Houghton, MI
  1689 CNA  
  2314 CNG  
  1635 CNM  
@@ -720,7 +720,7 @@
  1937 COL  
  1786 COOD 
    34 COS  72466   38.82 -104.72 1881 Colorado Springs, CO
- 2962 COU  72445  38.82  -92.22 274 Columbia Regional, MO/US
+ 2962 COU  72445  38.82  -92.22 274 Columbia, MO
   480 CPA  
  1298 CPH  
  2657 CPL  
@@ -729,7 +729,7 @@
  1461 CRK  
  2141 CRL  
    35 CRP  72251   27.77  -97.50 0013 Corpus Christi, TX
- 2226 CRW      0   38.37  -81.59 0299 Charlestown/Yeager, WV
+ 2226 CRW      0   38.37  -81.59 0299 Charleston, WV
  1918 CSG      0   32.52  -84.93  121 Columbus, GA  
  1239 CSS  
   348 CTP  46686   25.08  121.22   33 Chiang Kai Shek, Taiwan 
@@ -740,100 +740,100 @@
  3116 CUN" 
  2691 CUN0 
  2660 CUU  
-   36 CVG  72421   39.05  -84.67 0267 Cincinnati/Grtr, OH
+   36 CVG  72421   39.05  -84.67 0267 Cincinnati, OH
  1908 CVR  
  2083 CVS  
- 2224 CWA      0   44.78  -89.67 0389 Central Wisconsin
+ 2224 CWA      0   44.78  -89.67 0389 Wausau, WI
  1762 CWF  
  2550 CWR  
- 2965 CYAM 71260  46.48  -84.52 192 Sault Ste Marie , ON/CN
- 2369 CYBC 71187 49.13  -68.21  22  Baie Comeau, QB/CN
- 2399 CYBG  71727   48.33  -71.00  159 Bagotville, QB/CN
- 2373 CYCG 71884 49.30	-117.63	  495	Castlegar, BC/CN
- 2379 CYDF  71809   49.22  -57.40   22 Deer Lake, NF/CN
- 2420 CYDQ      0   55.75 -120.18  655 Dawson Creek Arp, BC/CN
- 1231 CYEG 71123   53.33 -113.58  719 Edmonton Intl, AB/CN
- 2390 CYFC  71700   45.87  -66.53   20 Fredericton, NB/CN
- 2386 CYGK  71620   44.22  -76.60   93 Kingston, ON/CN
- 2403 CYGP  71188   48.77  -64.48   33 Gaspe, QB/CN
- 2396 CYGR  71709   47.42  -61.78   10 Iles De La Madel, QB/CN
+ 2965 CYAM 71260  46.48  -84.52 192 Sault Ste. Marie, ON
+ 2369 CYBC 71187 49.13  -68.21  22  Baie Comeau, QC
+ 2399 CYBG  71727   48.33  -71.00  159 Bagotville, QC
+ 2373 CYCG 71884 49.30	-117.63	  495	Castlegar, BC
+ 2379 CYDF  71809   49.22  -57.40   22 Deer Lake, NL
+ 2420 CYDQ      0   55.75 -120.18  655 Dawson Creek, BC
+ 1231 CYEG 71123   53.33 -113.58  719 Edmonton, AB
+ 2390 CYFC  71700   45.87  -66.53   20 Fredericton, NB
+ 2386 CYGK  71620   44.22  -76.60   93 Kingston, ON
+ 2403 CYGP  71188   48.77  -64.48   33 Gaspe, QC
+ 2396 CYGR  71709   47.42  -61.78   10 Iles De La Madel, QC
   354 CYH      0    0       0
- 2368 CYHZ 71395 44.88  -63.51 145  Halifax, NS/CN
- 2410 CYKA  71887   50.70 -120.45  346 Kamloops, BC/CN
- 2397 CYLD      0   47.82  -83.35  447 Chapleau Arpt, ON/CN
- 2371 CYLW 71203 49.96 -119.38 429  Kelowna, BC/CN
- 2375 CYMM  71932   56.65 -111.22  369 Fort Mcmurray, AB/CN
- 1294 CYMX     0   45.68  -74.04   82 Montreal/Mirabel
- 2388 CYOW  71628   45.32  -75.67  114 Ottawa Intl, ON/CN
- 2413 CYPA  71869   53.22 -105.68  428 Prince Albert, SA/CN
- 2417 CYPR  71898   54.30 -130.43   34 Prince Rupert, BC/CN
- 2395 CYQB  71714   46.80  -71.38   73 Quebec, QB/CN
- 2383 CYQG  71538   42.27  -82.97  190 Windsor, ON/CN
- 2385 CYQI  71603   43.83  -66.08   43 Yarmouth, NS/CN
- 2406 CYQL  71874   49.63 -112.80  929 Lethbridge, AB/CN
- 2391 CYQM  71705   46.12  -64.68   71 Moncton, NB/CN
- 2408 CYQR  71863   50.43 -104.67  577 Regina, SA/CN
- 2400 CYQT  71749   48.37  -89.32  199 Thunder Bay, ON/CN
- 2419 CYQU  71940   55.18 -118.88  669 Grand Prairie, AB/CN
-  608 CYQX 71803   48.96  -54.57  151 Gander Intl, NF
- 2392 CYQY  71707   46.17  -60.05   62 Sydney, NS/CN
+ 2368 CYHZ 71395 44.88  -63.51 145  Halifax, NS
+ 2410 CYKA  71887   50.70 -120.45  346 Kamloops, BC
+ 2397 CYLD      0   47.82  -83.35  447 Chapleau Arpt, ON
+ 2371 CYLW 71203 49.96 -119.38 429  Kelowna, BC
+ 2375 CYMM  71932   56.65 -111.22  369 Fort McMurray, AB
+ 1294 CYMX     0   45.68  -74.04   82 Montreal, QC (Mirabel Apt.)
+ 2388 CYOW  71628   45.32  -75.67  114 Ottawa, ON
+ 2413 CYPA  71869   53.22 -105.68  428 Prince Albert, SK
+ 2417 CYPR  71898   54.30 -130.43   34 Prince Rupert, BC
+ 2395 CYQB  71714   46.80  -71.38   73 Quebec City, QC
+ 2383 CYQG  71538   42.27  -82.97  190 Windsor, ON
+ 2385 CYQI  71603   43.83  -66.08   43 Yarmouth, NS
+ 2406 CYQL  71874   49.63 -112.80  929 Lethbridge, AB
+ 2391 CYQM  71705   46.12  -64.68   71 Moncton, NB
+ 2408 CYQR  71863   50.43 -104.67  577 Regina, SK
+ 2400 CYQT  71749   48.37  -89.32  199 Thunder Bay, ON
+ 2419 CYQU  71940   55.18 -118.88  669 Grand Prairie, AB
+  608 CYQX 71803   48.96  -54.57  151 Gander Intl, NL
+ 2392 CYQY  71707   46.17  -60.05   62 Sydney, NS
  1843 CYR  
- 2412 CYRL  71854   51.07  -93.80  383 Red Lake, ON/CN
- 2411 CYRV  71882   50.97 -118.18  443 Revelstoke, BC/CN
+ 2412 CYRL  71854   51.07  -93.80  383 Red Lake, ON
+ 2411 CYRV  71882   50.97 -118.18  443 Revelstoke, BC
    37 CYS  72564   41.15 -104.82 1872 Cheyenne, WY
- 2394 CYSB  71730   46.62  -80.80  348 Sudbury, ON/CN
- 2387 CYSJ  71609   45.32  -65.88  109 Saint John, NB/CN
- 2376 CYTS  71739   48.57  -81.37  295 Timmins, ON/CN
+ 2394 CYSB  71730   46.62  -80.80  348 Sudbury, ON
+ 2387 CYSJ  71609   45.32  -65.88  109 Saint John, NB
+ 2376 CYTS  71739   48.57  -81.37  295 Timmins, ON
   357 CYU      0    0       0
- 2389 CYUL  71627   45.47  -73.75   36 Montreal/Dorval, QB/CN
- 2377 CYUY      0   48.20  -78.83  301 Rouyn Airport, QB/CN
+ 2389 CYUL  71627   45.47  -73.75   36 Montreal, QC (Trudeau Apt.)
+ 2377 CYUY      0   48.20  -78.83  301 Rouyn, QC
  2109 CYV  
- 2398 CYVO  71725   48.07  -77.78  337 Val D'or, QB/CN
+ 2398 CYVO  71725   48.07  -77.78  337 Val D'or, QC
   785 CYVR 71892   49.18 -123.18    2 Vancouver Intl, BC
  2651 CYVV 
- 1230 CYWG 71852   49.91  -97.23  239 Winnipeg, MB/CN
- 2382 CYWK  71825   52.93  -66.87  551 Wabush/Lbrdr Cty, NF/CN
- 2405 CYXC  71880   49.60 -115.78  939 Cranbrook, BC/CN
- 2381 CYXE  71866   52.17 -106.68  504 Saskatoon, SA/CN
- 2407 CYXH  71872   50.02 -110.72  716 Medicine Hat, AB/CN
- 2374 CYXJ  71943   56.23 -120.73  695 Fort Saint John, BC/CN
- 2416 CYXS  71896   53.88 -122.68  691 Prince George, BC/CN
- 2418 CYXT  71951   54.47 -128.58  217 Terrace, BC/CN
- 2384 CYXU  71623   43.03  -81.15  278 London, ON/CN
- 2404 CYXX  71108   49.03 -122.37   58 Abbotsford, BC/CN
- 1295 CYXY     0   60.71 -135.07  706 Whitehorse Intl
+ 1230 CYWG 71852   49.91  -97.23  239 Winnipeg, MB
+ 2382 CYWK  71825   52.93  -66.87  551 Labrador City, NL
+ 2405 CYXC  71880   49.60 -115.78  939 Cranbrook, BC
+ 2381 CYXE  71866   52.17 -106.68  504 Saskatoon, SK
+ 2407 CYXH  71872   50.02 -110.72  716 Medicine Hat, AB
+ 2374 CYXJ  71943   56.23 -120.73  695 Fort Saint John, BC
+ 2416 CYXS  71896   53.88 -122.68  691 Prince George, BC
+ 2418 CYXT  71951   54.47 -128.58  217 Terrace, BC
+ 2384 CYXU  71623   43.03  -81.15  278 London, ON
+ 2404 CYXX  71108   49.03 -122.37   58 Abbotsford, BC
+ 1295 CYXY     0   60.71 -135.07  706 Whitehorse, YK
   358 CYY      0    0       0
- 2393 CYYB  71731   46.35  -79.43  371 North Bay, ON/CN
-  805 CYYC 71877   51.12 -114.02 1084 Calgary Intl, AB/CN 
- 2437 CYYD  71950   54.82 -127.18  523 Smithers, BC/CN
- 2370 CYYF 71889 49.46 -119.60 344  Penticton, BC/CN
- 2380 CYYG  71706   46.28  -63.13   54 Charlottetown, PE/CN
- 2402 CYYJ  71799   48.65 -123.43   19 Victoria Intl, BC/CN
- 2421 CYYQ  71913   58.75  -94.07   29 Churchill, MN/CN
- 2415 CYYR  71816   53.32  -60.42   49 Goose Bay, NF/CN
+ 2393 CYYB  71731   46.35  -79.43  371 North Bay, ON
+  805 CYYC 71877   51.12 -114.02 1084 Calgary Intl, AB
+ 2437 CYYD  71950   54.82 -127.18  523 Smithers, BC
+ 2370 CYYF 71889 49.46 -119.60 344  Penticton, BC
+ 2380 CYYG  71706   46.28  -63.13   54 Charlottetown, PE
+ 2402 CYYJ  71799   48.65 -123.43   19 Victoria Intl, BC
+ 2421 CYYQ  71913   58.75  -94.07   29 Churchill, MN
+ 2415 CYYR  71816   53.32  -60.42   49 Goose Bay, NL
  2259 CYYT 
- 2401 CYYY  71718   48.60  -68.22   52 Mont Joli, QB/CN
-  783 CYYZ 71624   43.68  -79.63  176 Toronto Intl, ON 
- 2414 CYZP  71101   53.25 -131.82    6 Sandspit, BC/CN
- 2409 CYZT  71109   50.68 -127.37   22 Port Hardy, BC/CN
- 2378 CYZV  71811   50.22  -66.27   55 Sept Iles, QB/CN
- 2372 CZBF     0 47.63  -65.74  59  Bathurst, NB/CN
+ 2401 CYYY  71718   48.60  -68.22   52 Mont Joli, QC
+  783 CYYZ 71624   43.68  -79.63  176 Toronto, ON 
+ 2414 CYZP  71101   53.25 -131.82    6 Sandspit, BC
+ 2409 CYZT  71109   50.68 -127.37   22 Port Hardy, BC
+ 2378 CYZV  71811   50.22  -66.27   55 Sept Iles, QC
+ 2372 CZBF     0 47.63  -65.74  59  Bathurst, NB
  2096 CZM  
  2046 DAA  
  2584 DAAG  60390   36.71    3.25   25 Algiers, Algeria
  1705 DAB  
   890 DAE  
-  350 DAL  72259   32.90  -97.03 0182 Dallas/Fort Worth, TX  
+  350 DAL  72258   32.85  -96.85  148 Dallas, TX (Love Field)
  2906 DAP  
  2817 DAS  
  2611 DAUH 60581  31.67   6.14   141  Hassi Messaoud, Algeria
  2807 DAX  
-   38 DAY  72429   39.90  -84.20 0298 Dayton/James Cox, OH
+   38 DAY  72429   39.90  -84.20 0298 Dayton, OH
  1232 DBBS 65335    8.03    2.47  200 Save, Benin
  1523 DBC  
- 2963 DBQ  72547  42.40  -90.70 329 Dubuque Municipal, IA/US
+ 2963 DBQ  72547  42.40  -90.70 329 Dubuque, IA
  2467 DBX  
-   39 DCA  72405   38.85  -77.03 0005 Washington National, VA
+   39 DCA  72405   38.85  -77.03 0005 Washington, DC (Reagan Apt.)
  2904 DCD  
  1701 DCP  
   575 DDD  
@@ -843,7 +843,7 @@
   741 DEC      0   39.83  -88.87  208 Decatur, IL 
  2827 DEF  
   266 DEL  42182   28.58   77.20  216 Delhi/Safdarjun, IN
-   40 DEN  72469   39.87 -104.67 1611 Denver (DIA), CO
+   40 DEN  72469   39.87 -104.67 1611 Denver, CO
  2145 DEO  
   654 DES      0    0       0  
  3087 DET  
@@ -880,8 +880,8 @@
   465 DKS  
  1343 DKT  
  1690 DKW  
- 2832 DLG  70321  59.05  -158.52  29   DILLINGHAM, AK
- 2221 DLH      0   46.84  -92.19 0435 Duluth Intl, MN
+ 2832 DLG  70321  59.05  -158.52  29   Dillingham, AK
+ 2221 DLH      0   46.84  -92.19 0435 Duluth, MN
  1999 DLR  
  3046 DME  
  2352 DNA  
@@ -908,11 +908,11 @@
   934 DTMB     0   35.60   10.70    2 Monastir
   935 DTTA     0   36.80   10.20    6 Tunis
  2288 DTU  
-   44 DTW  72537   42.23  -83.33 0191 Detroit Metro, MI
+   44 DTW  72537   42.23  -83.33 0191 Detroit, MI
  1655 DUB  
   311 DUS  10400   51.28    6.78   44 Duesseldorf, DL     
- 2830 DUT  70489  53.89  -166.53   4   DUTCH HARBOR/Unalaska, AK
- 2218 DVL      0   48.11  -98.91 0443 Devils Lake Muni
+ 2830 DUT  70489  53.89  -166.53   4   Dutch Harbor/Unalaska, AK
+ 2218 DVL      0   48.11  -98.91 0443 Devils Lake, ND
   729 DWV  
  2884 DWW  
  1337 DXB  
@@ -920,7 +920,7 @@
  1698 DYS  
  1956 EAA  
  2630 EAB  41112   18.23   42.65 2090 Abha, SD  
- 2217 EAU      0   44.87  -91.49 0276 Chippewa Valley Regional
+ 2217 EAU      0   44.87  -91.49 0276 Eau Claire, WI
   258 EBBR 06451   50.90    4.53   58 Brussels National Apt, BX
  1254 EBC  
   937 EBCI     0   50.60    4.50  187 Charleroi
@@ -1018,10 +1018,10 @@
   979 EPWA     0   52.10   20.90  110 Warsaw
   838 EQU  84071   -0.14  -78.49 2813 Quito, Ecuador 
  2750 ERD  
- 2215 ERI      0   42.08  -80.18 0223 Erie Intl/Tom Ridge Field
+ 2215 ERI      0   42.08  -80.18 0223 Erie, PA
  3068 ERT  
  1257 ERW  
- 2964 ESC  72648  45.73  -87.08 185 Escanaba, MI/US
+ 2964 ESC  72648  45.73  -87.08 185 Escanaba, MI
   980 ESDB     0   56.30   12.80   20 Angelholm
   981 ESGG     0   57.80   12.30  154 Gotenburg
  2309 ESM  
@@ -1044,7 +1044,7 @@
  1124 EVC     0   39.50   -0.50   68 Valencia  
   994 EVRA     0   57.10   24.10   10 Riga
  2214 EVV      0   38.04  -87.53 0127 Evansville Regional
-   52 EWR  72502   40.70  -74.17 0009 Newark Intl, NJ
+   52 EWR  72502   40.70  -74.17 0009 Newark, NJ
   995 EYVI     0   54.80   25.20  196 Vilnius
   230 EZE  87576  -34.82  -58.53   20 Buenos Aires-Ezeiza, AG
  2591 FABL  68442 -29.10    26.30 1354 Bloemfontein, SA
@@ -1053,15 +1053,15 @@
  2557 FAEL  68858  -33.03   27.83  125 East London, SA
  1307 FAF  
  1420 FAGG 68828  -34.01   22.38  198 George, So. Africa
-  201 FAI  70261   64.82 -147.87  138 Fairbanks Intl, AK  
+  201 FAI  70261   64.82 -147.87  138 Fairbanks, AK  
   997 FAJS     0  -26.10   28.30 1720 Johannesburg
  1421 FAPE 68842  -33.98   25.62   69 Port Elizabeth, So. Africa
-   53 FAR  72753   46.90  -96.80 0274 Fargo/Hector, ND
+   53 FAR  72753   46.90  -96.80 0274 Fargo, ND
    54 FAT  72389   36.77 -119.72 0100 Fresno, CA
  1220 FAWW 68110  -22.57   17.10 1725 Windhoek, NM
  2725 FAX  
  2686 FAY      0   34.98  -78.88   58 Fayetteville, NC  
- 2082 FCA  72779   48.30 -114.27  906 Kalispell/Glacier, MT
+ 2082 FCA  72779   48.30 -114.27  906 Kalispell, MT
  2793 FCO  
   710 FCV  
  3142 FDA  
@@ -1091,7 +1091,7 @@
  2578 FKYS  64950    3.81   11.50  751 Yaounde, Cameroon
  1921 FLB  
  2753 FLD  
-  246 FLL      0   26.07  -80.15    3 Ft. Ldrdale/Hlywd, FL
+  246 FLL      0   26.07  -80.15    3 Ft. Lauderdale, FL
  2559 FLL# 
  2609 FLLI  67743 -17.82  25.82  1006  Livingstone, Zambia
  2582 FLLS  67665  -15.33   28.45 1152 Lusaka, Zambia
@@ -1100,8 +1100,8 @@
  1737 FMN       0   43.60    7.20    3 Nice   
  2604 FMY  
   998 FNLU     0   -8.40   12.80   70 Luanda
- 2211 FNT      0   42.97  -83.74 0238 Bishop International
- 2210 FOD      0   42.55  -94.19 0352 Fort Dodge Regional
+ 2211 FNT      0   42.97  -83.74 0238 Flint, MI
+ 2210 FOD      0   42.55  -94.19 0352 Fort Dodge, IA
  2059 FOE  
  1126 FOOD 
   373 FPG      0   49.01    2.55  117 Paris Charles De Gaulle
@@ -1109,9 +1109,9 @@
   999 FQMA     0  -25.90   32.60   43 Maputo
   298 FRA      0    0       0
  2927 FSC   07780 41.51 9.10 27 Figari, FR
-   55 FSD  72651   43.57  -96.73 0435 Sioux Falls/Foss, SD
+   55 FSD  72651   43.57  -96.73 0435 Sioux Falls, SD
  1000 FSIA     0   -4.70   55.50    3 Seychelles
- 2208 FSM      0   35.34  -94.37 0142 Fort Smith Regional
+ 2208 FSM      0   35.34  -94.37 0142 Fort Smith, AR
  2442 FSO  
  2581 FTTJ  64700   12.13   15.03  295 Ndjamena, Chad
  2728 FUA  
@@ -1144,7 +1144,7 @@
  2073 GDI  
    57 GDL  76613   20.52 -103.32 1526 Guadalajara/Hidalgo, Mexico
    58 GEG  72785   47.63 -117.53 0720 Spokane, WA
- 2206 GFK      0   47.95  -97.18 0257 Grand Forks Intl
+ 2206 GFK      0   47.95  -97.18 0257 Grand Forks, ND
   889 GFW  
  2747 GGE  
  2448 GGG  59287  23.39  113.30    15  Baiyun/Guangzhou, CI 
@@ -1172,7 +1172,7 @@
   426 GKS  
   500 GKT  
  1550 GLA  
- 2205 GLH      0   33.48  -90.99 0039 Mid Delta Rgnl
+ 2205 GLH      0   33.48  -90.99 0039 Greenville, MS
  1242 GLK  
  2099 GLL  
  1007 GMAD     0   30.40   -9.50   76 Agadir
@@ -1185,20 +1185,20 @@
  1238 GOD  
  2294 GOG  
  1419 GOJ  27459   56.27   44.00  157 Niznij Novgorod, Russia
-   59 GON  90036   41.33  -72.05 0006 Groton/Trumbull, CT
+   59 GON  90036   41.33  -72.05 0006 Groton, CT
  2558 GOOY  61641   14.74  -17.49   26 Dakar, Senegal
  2951 GPH  
- 2204 GPT      0   30.41  -89.07 0008 Gulfport-Biloxi Intl
+ 2204 GPT      0   30.41  -89.07 0008 Gulfport/Biloxi, MS
  2648 GPY  
- 2203 GPZ      0   47.21  -93.51 0413 Grand Rapids/Newstrom Fld
-  343 GRB  72645   44.48  -88.13  214 Green Bay/Strbl, WI
+ 2203 GPZ      0   47.21  -93.51 0413 Grand Rapids, MN
+  343 GRB  72645   44.48  -88.13  214 Green Bay, WI
  1668 GRK  
   209 GRR  72635   42.88  -85.52  245 Grand Rapids, MI
    60 GRU  90006  -23.53  -46.63  792 Sao Paulo/Guarulhos, BZ
  1781 GSB  
  3089 GSN  
    61 GSO  72317   36.08  -79.95 0275 Greensboro, NC
-  653 GSP  72312   34.90  -82.22  296 Grnvile-Sprtnbrg, SC
+  653 GSP  72312   34.90  -82.22  296 Greenville/Spartanburg, SC
   297 GSS      0    0       0
   600 GTB  
   318 GTF  72775   47.48 -111.35 1118 Great Falls, MT  
@@ -1230,16 +1230,16 @@
  1369 HEL  
  1386 HELX 62405   25.67   32.71   90 Luxor, Egypt
  2027 HER  
-   64 HFD  90035   41.73  -72.65 0006 Hartfrd/Brainard, CT
+   64 HFD  90035   41.73  -72.65 0006 Hartford, CT (Brainerd Apt.)
  1755 HGK  
  1599 HGT  
  1377 HHAS 63021   15.29   38.91 2335 Asmara, Eritrea
-  321 HHH      0   32.22  -80.70 9999 Hilton Head Island, S.C.
+  321 HHH      0   32.22  -80.70 9999 Hilton Head Island, SC
  1252 HHI  
  1180 HHL  
  1285 HHN  
  2552 HIA  
- 2199 HIB      0   47.39  -92.84 0412 Chisholm-hibbing
+ 2199 HIB      0   47.39  -92.84 0412 Hibbing, MN
  2649 HIF  
  1941 HIK  
  1808 HIL  
@@ -1252,7 +1252,7 @@
   671 HKL  
   881 HKM  
  1011 HKNA     0   -1.30   36.80 1624 Nairobi
-  576 HKO      0   19.73 -156.05   13 Keahole Kona Intl, HI  
+  576 HKO      0   19.73 -156.05   13 Keahole Kona, HI  
   684 HKR  
   690 HKS  
  1540 HLI  
@@ -1268,7 +1268,7 @@
  2144 HOA  
   338 HOG      0   20.50  -76.23 9999 Holguin, Cuba                         
  1680 HOP  
-   66 HOU  72243   29.65  -95.28 0015 Houston/Hobby, TX
+   66 HOU  72243   29.65  -95.28 0015 Houston, TX (Hobby Apt.)
    67 HPN  90010   41.07  -73.72 0134 White Plains, NY
   546 HRL  
  1775 HRT  
@@ -1287,8 +1287,8 @@
  2922 HYD   43128  17.24  78.43  617  Hyderabad Intl, IN
  1874 IAA  
  2720 IAC  
-   69 IAD  72403   38.98  -77.47 0085 Dulles Intl, VA
-   70 IAH  72243   29.97  -95.35 0013 Houston Intl, TX
+   69 IAD  72403   38.98  -77.47 0085 Washington, DC (Dulles Apt.)
+   70 IAH  72243   29.97  -95.35 0013 Houston, TX (Bush Apt.)
  2885 ICI  
  1195 ICN  
    71 ICT  72450   37.65  -97.43 0406 Wichita, KS
@@ -1316,12 +1316,12 @@
   553 IKS  
   672 IKT  
  2530 ILH  
- 2958 ILM  72301  34.27  -77.92   9 Wilmington, NC/US
+ 2958 ILM  72301  34.27  -77.92   9 Wilmington, NC
  1304 IME  
- 2955 IMT   0     45.82  -88.12 358 Iron Mtn/Ford, MI/US
+ 2955 IMT   0     45.82  -88.12 358 Iron Mountain, MI
  1250 INC  
    74 IND  72438   39.73  -86.27 0246 Indianapolis, IN
- 2196 INL      0   48.57  -93.40 0361 Falls Intl
+ 2196 INL      0   48.57  -93.40 0361 International Falls, MI
  2460 INN  
  1968 IORD 
  1473 IPA  
@@ -1337,10 +1337,10 @@
  1314 ISB  
   891 ISFO 
  1969 ISGA 
-   75 ISP  90012   40.78  -73.10 0030 Islip/Macarthur, NY
+   75 ISP  90012   40.78  -73.10 0030 Islip, NY
   289 IST  17060   40.97   28.82   37 Istanbul/Atatur TU
  1814 ISX  
- 2959 ITH      0  42.48  -76.47 335 Ithica, NY/US
+ 2959 ITH      0  42.48  -76.47 335 Ithica, NY
  3086 IUL  
  1246 IUO  
  2549 IVC  
@@ -1358,7 +1358,7 @@
  1869 JEK  
  1750 JEY  
  2133 JFJ  
-   79 JFK  74486   40.65  -73.78 0007 New York JFK, NY
+   79 JFK  74486   40.65  -73.78 0007 New York, NY (JFK Apt.)
  2334 JFK# 
  2880 JFK0 
  2585 JFT  47819   32.84  130.86   196  Kumamoto, JP  
@@ -1377,11 +1377,11 @@
  1838 JKK  
   768 JKM  
  2588 JKS  
- 2194 JMS      0   46.93  -98.68 0456 Jamestown Regional
+ 2194 JMS      0   46.93  -98.68 0456 Jamestown, ND
  1178 JQE  
  1426 JRA  
  2764 JSB  
-  280 JSJ  78526   18.43  -66.00   19 San Juan, PU
+  280 JSJ  78526   18.43  -66.00   19 San Juan, PR
  3067 JSO  
  1831 JST  
  1803 JSU  
@@ -1393,12 +1393,12 @@
   370 KAC      0    0       0  
   647 KAD      0    0       0 
  1440 ADW 74594   38.82  -76.87   86 Andrews AFB, MD 
-  781 AFW     0   32.98  -97.32  220 Fort Worth/Alliance, TX 
+  781 AFW     0   32.98  -97.32  220 Fort Worth, TX (Alliance Apt.)
  1217 KAL  
   574 KAM  
  2941 KAO   0     65.99 29.24 264 Kuusamo, FI
  2432 KAQ  
-  376 ARA     0   30.03  -91.88    7 New Iberia/Acadi, LA 
+  376 ARA     0   30.03  -91.88    7 New Iberia, LA 
  1208 KAS  
   187 KAT      0    0       0 
  1360 KATL
@@ -1413,7 +1413,7 @@
   332 KBH      0    0       0   
  1495 BHM  72228   33.47  -86.83 0227 Birmingham, AL
  1181 KBI  
- 1334 BIL  72677   45.80 -108.53 1088 Billings/Logan, MT
+ 1334 BIL  72677   45.80 -108.53 1088 Billings, MT
   283 KBN      0    0       0   
   207 KBO      0    0       0   
  1443 KBO? 
@@ -1432,15 +1432,15 @@
   388 KCO      0    0       0   
   809 CSG     0   32.52  -84.93  121 Columbus, GA 
   182 KCV      0    0       0   
- 1337 CVG  72421   39.05  -84.67 0267 Cincinnati/Grtr, OH
+ 1337 CVG  72421   39.05  -84.67 0267 Cincinnati, OH
  1962 DBI 
   229 KDC      0    0       0   
- 1331 DCA  72405   38.85  -77.03 0005 Washington National, VA
+ 1331 DCA  72405   38.85  -77.03 0005 Washington, DC (Reagan Apt.)
  1532 DCG 
  1511 DCW
   180 KDE      0    0       0   
  1312 KDE? 
- 1409 DEN  72469   39.87 -104.67 1611 Denver (DIA), CO
+ 1409 DEN  72469   39.87 -104.67 1611 Denver, CO
   186 KDF      0    0       0   
  1328 DFA 
  1584 DFI 
@@ -1463,7 +1463,7 @@
   856 KFD  
  2670 KFK  
   183 KFL      0    0       0   
- 1333 FLL     0   26.07  -80.15    3 Ft. Ldrdale/Hlywd, FL
+ 1333 FLL     0   26.07  -80.15    3 Ft. Lauderdale, FL
  1368 FLW
  1743 FOE 
  1274 GBR 0 0 0
@@ -1482,8 +1482,8 @@
  1621 KHR  
   216 KIA      0    0       0   
  1464 KIA? 
- 1340 IAD  72403   38.98  -77.47 0085 Dulles Intl, VA
- 1434 IAH  72243   29.97  -95.35 0013 Houston Intl, TX
+ 1340 IAD  72403   38.98  -77.47 0085 Washington, DC (Dulles Apt.)
+ 1434 IAH  72243   29.97  -95.35 0013 Houston, TX (Bush Apt.)
  2143 KIF` 
  2114 KIK  
  1783 ILM 
@@ -1494,7 +1494,7 @@
  2797 KJB  
   208 KJF      0    0       0   
  1292 KJF? 
- 1341 JFK  74486   40.65  -73.78 0007 New York JFK, NY
+ 1341 JFK  74486   40.65  -73.78 0007 New York, NY (JFK Apt.)
  2091 KJK       0   35.55  126.37    9 Gunsan, KO  
  1536 KJP   78397   17.93  -76.78    9 Kingston, JM   
  1114 KJS   78388   18.50  -77.91    1 Montego Bay/Sangster, JM  
@@ -1524,7 +1524,7 @@
  1342 LIT
  1722 KLL  
   306 KLS      0    0       0   
-  616 LAS 72386   36.08 -115.17  664 Las Vegas/Mccarr, NV
+  616 LAS 72386   36.08 -115.17  664 Las Vegas, NV
   214 KMC      0    0       0   
  2848 KMC? 
  1849 MCC 
@@ -1542,7 +1542,7 @@
  2038 KMR  
   218 KMS      0    0       0   
  1326 MSY
-  814 MCO 72205   28.43  -81.32   32 Orlando Jetport , FL
+  814 MCO 72205   28.43  -81.32   32 Orlando, FL
  1477 KNG  
  1480 KNK  
  1287 KNM  
@@ -1581,7 +1581,7 @@
  1471 PIH 72578 42.92  -112.57  1365 Pocatello, ID
  2258 KPK      0   35.10  128.56    4 Pusan/Kimhae, KO  
  1498 KPL  
-  810 PMD 72382   34.63 -118.08  774 Palmdale Product, CA
+  810 PMD 72382   34.63 -118.08  774 Palmdale, CA
  1327 PNS 
  1439 KPO  
  1504 KPS      0   35.05  128.05    8 Sacheon, KO 
@@ -1666,12 +1666,12 @@
    82 LAN  72539   42.77  -84.60 0266 Lansing, MI
  2808 LAP  
  3139 LAR  
-   83 LAS  72386   36.08 -115.17 0664 Las Vegas/McCrrn, NV
+   83 LAS  72386   36.08 -115.17 0664 Las Vegas, NV
  2568 LATI  13615   41.33   19.78   90 Tirana, Albania
  2146 LAW  
    84 LAX  72295   33.93 -118.40 0034 Los Angeles, CA
   682 LAY  
-   85 LBB  72267   33.65 -101.82 0988 Lubbock Intl, TX
+   85 LBB  72267   33.65 -101.82 0988 Lubbock, TX
  1177 LBD  
  1199 LBG      0   32.10   34.90   41 Tel Aviv  
  1249 LBJ  
@@ -1680,7 +1680,7 @@
  2569 LBWN  15552   43.20   27.92   43 Varna, Bulgaria
  1311 LCA  
  1850 LCB  
- 2957 LCH  72240  30.12  -93.22  10 Lake Charls, LA/US
+ 2957 LCH  72240  30.12  -93.22  10 Lake Charles, LA
   269 LCK      0   39.82  -82.93  227 Rickenbacker AFB, OH 
  1015 LCLK     0   34.90   33.70    2 Larnaca
  1872 LCQ  
@@ -1700,7 +1700,7 @@
  1240 LEMH 08314   39.87    4.23   82 Mahon/Menorca, SP
  1024 LEPA     0   39.50    2.70    9 Palma de Mallorca
  1025 LEVC     0   39.50   -0.50   68 Valencia
-   86 LEX  72422   38.05  -84.60 0301 Lexington/Bgf, KY
+   86 LEX  72422   38.05  -84.60 0301 Lexington, KY
  1026 LEZL     0   37.40   -5.90   34 Seville
  1027 LFBD     0   44.80   -0.70   49 Bordeaux
  1028 LFBO     0   43.60    1.40  152 Toulouse
@@ -1727,7 +1727,7 @@
  1046 LFST     0   48.50    7.60  153 Strasbourg
   271 LFT      0   30.20  -92.00   13 Lafayette, LA 
  1047 LFTW     0   43.80    4.40   94 Nimes
-   87 LGA  72503   40.77  -73.90 0013 New York (La Guardia), NY
+   87 LGA  72503   40.77  -73.90 0013 New York, NY (La Guardia Apt.)
  2267 LGA0 
  1048 LGAT     0   37.90   23.70   20 Athens
  2262 LGAV 
@@ -1760,7 +1760,7 @@
  1063 LIRN     0   40.90   14.30   90 Naples
  1064 LIRP     0   43.80   10.30    2 Pisa
  1308 LIS  
-   89 LIT  90015   34.73  -92.23 0078 Little Rk/Adams, AR
+   89 LIT  90015   34.73  -92.23 0078 Little Rock, AR
  1065 LJLJ     0   46.30   14.50  384 Lubljana
  1907 LJS  
  2433 LJT  
@@ -1824,10 +1824,10 @@
  2620 LRB  
  1076 LRBS     0   44.70   26.10   90 Bucharest/Baneasa
  2659 LRD  
- 2961 LRD  72252  27.53  -99.47 156 Laredo, TX/US
+ 2961 LRD  72252  27.53  -99.47 156 Laredo, TX
   717 LRF  
  1666 LRM  
- 2189 LSE      0   43.88  -91.26 0199 La Crosse Muni
+ 2189 LSE      0   43.88  -91.26 0199 La Crosse, WI
   811 LSF  
  1077 LSGG     0   46.10    6.10  430 Geneva
   491 LSP  
@@ -1868,17 +1868,17 @@
  2444 MBF  
  3124 MBG  
  1546 MBJ  
-  206 MBS      0   43.53  -84.08  204 Tri-City/Saginaw, MI
+  206 MBS      0   43.53  -84.08  204 Midland/Bay City/Saginaw, MI
  2075 MBY  
  3044 MCF  
- 2857 MCG  70231  62.97  -155.62 103   MCGRATH, AK
-   91 MCI  72446   39.32  -94.72 0312 Kansas City Intl, MO
+ 2857 MCG  70231  62.97  -155.62 103   McGrath, AK
+   91 MCI  72446   39.32  -94.72 0312 Kansas City, MO
  2001 MCM  
-  196 MCO  72205   28.43  -81.32   32 Orlando Jetport, FL
+  196 MCO  72205   28.43  -81.32   32 Orlando, FL
  1828 MCQ  
  2663 MCS  
  2664 MCU  
- 2186 MCW      0   43.16  -93.33 0369 Mason City Muni
+ 2186 MCW      0   43.16  -93.33 0369 Mason City, IA
  1734 MCZ  
  1429 MDB  41194   25.25   55.36   10 Dubai, UAE  
  1168 MDD  
@@ -1887,15 +1887,15 @@
  1507 MDO  
  1903 MDP  
  2281 MDS  
-   92 MDT  90016   40.20  -76.77 0094 Middletwn/Olmstd, PA
-  217 MDW  72534   41.78  -87.75  188 Chicago/Midway, IL
+   92 MDT  90016   40.20  -76.77 0094 Harrisburg, PA
+  217 MDW  72534   41.78  -87.75  188 Chicago, IL (Midway Apt.)
  1778 MED  
  2811 MEG  
   365 MEL      0  -37.73  144.90   85 Melbourne/Essendon, AUS
-   93 MEM  72334   35.05  -90.00 0087 Memphis Intl, TN
+   93 MEM  72334   35.05  -90.00 0087 Memphis, TN
    94 MEX  76679   19.43  -99.07 2234 Mexico City, MX
-   95 MFE  90017   26.18  -98.23 0033 Miller Intl., TX
-   96 MFR  72597   42.37 -122.87 0401 Medford, Or
+   95 MFE  90017   26.18  -98.23 0033 McAllen, TX
+   96 MFR  72597   42.37 -122.87 0401 Medford, OR
   771 MGA      0    0       0  
  2137 MGE  
   263 MGG      0    0       0
@@ -1909,7 +1909,7 @@
    97 MHT  90018   42.93  -71.43 0071 Manchester, NH
  1175 MHW  
   632 MHrm     0    0       0 
-   98 MIA  72202   25.82  -80.28 0004 Miami Intl, FL
+   98 MIA  72202   25.82  -80.28 0004 Miami, FL
  3141 MIA" 
  2053 MIA# 
  2635 MIA0 
@@ -1924,22 +1924,22 @@
  1700 MJP  
  3082 MJZ  
   512 MKA      0   6.192 100.401    4 Sultan Abdul Halim
- 1350 MKC      0   39.12  -94.60  231 Kansas City MUNI, MO
+ 1350 MKC      0   39.12  -94.60  231 Kansas City, MO (Downtown Apt.)
   609 MKD  48657    3.78  103.22   16 Kuantan (AFB), Malasya
-   99 MKE  72640   42.95  -87.90 0211 Milwaukee/Mtchll, WI
-  651 MKG  72636   43.17  -86.27  193 Muskegon County, MI
+   99 MKE  72640   42.95  -87.90 0211 Milwaukee, WI (Mitchell Apt.)
+  651 MKG  72636   43.17  -86.27  193 Muskegon, MI
   597 MKJ      0    0       0   
   787 MKJP 78397   17.93  -76.78    9 Kingston, JM 
  1673 MKJS 78388   18.50  -77.91    1 Montego Bay/Sangster, JM
   223 MKK  10007   21.15 -157.10  137 Kaunakakia, HI
-  748 MKL      0   35.60  -88.92  132 Mckellar/Jackson, TN
+  748 MKL      0   35.60  -88.92  132 Jackson, TN
   317 MKP      0    0       0  
  1590 MLB  
  1946 MLC  
-  536 MLI  72544   41.45  -90.52  181 Moline/Quad City, IL
+  536 MLI  72544   41.45  -90.52  181 Moline, IL
  1172 MLO  
  3081 MLP  
- 2181 MLU      0   32.51  -92.04 0024 Monroe Regional
+ 2181 MLU      0   32.51  -92.04 0024 Monroe, LA
  2363 MLY  
   381 MMA  02636   55.55   13.37  106 Malmo-Sturup, SWEDEN 
  1313 MMC  
@@ -1966,31 +1966,31 @@
   100 MNL  99044   14.52  121.02 0016 Manila/Luzon, PH
  2126 MNN  
  1427 MNR  
-  101 MOB  72223   30.68  -88.25 0067 Mobile/Bates, AL
+  101 MOB  72223   30.68  -88.25 0067 Mobile, AL
  2454 MOT  
  2044 MOU  
  1157 MPK  
   846 MPR  
   248 MPT      0    0       0  
   102 MPTO 78792    9.05  -79.37 0011 Tocumen/Gen. OM
- 2180 MQT      0   46.35  -87.40 0372 Sawyer Intl, MI
+ 2180 MQT      0   46.35  -87.40 0372 Marquette, MI
  2713 MRB  
   646 MRH      0    0       0   
   291 MRO      0    0       0 
   103 MROC 78762    9.93  -84.10 0931 San Jose, CS
  2068 MRT  
-  256 MRY      0   36.58 -121.85   67 Monterey Pninsla, CA
+  256 MRY      0   36.58 -121.85   67 Monterey, CA
  1707 MSD  
   363 MSJ      0    0       0   
   202 MSL      0   34.75  -87.62  168 Muscle Shoals, AL 
   560 MSLP     0   13.44  -89.06   30 El Salvador Int, BA
-  104 MSN  72641   43.13  -89.33 0264 Madison/Dane, WI
-  744 MSO  72773   46.92 -114.08  976 Missoula/Johnson, MT
-  105 MSP  72658   44.88  -93.22 0256 Mineapolis-St Pl, MN
+  104 MSN  72641   43.13  -89.33 0264 Madison, WI
+  744 MSO  72773   46.92 -114.08  976 Missoula, MT
+  105 MSP  72658   44.88  -93.22 0256 Mineapolis/St. Paul, MN
  2887 MSQ  
-  106 MSY  72231   29.98  -90.25 0009 New Orleans Intl, LA
+  106 MSY  72231   29.98  -90.25 0009 New Orleans, LA
  2456 MTC  
-  107 MTJ  90019   38.50 -107.88 1755 Montrose Airport, CO
+  107 MTJ  90019   38.50 -107.88 1755 Montrose, CO
  1422 MTPP 78439   18.58  -72.29   37 Port-au-Prince, Haiti
   108 MTY  76394   25.87 -100.23 0448 Monterrey Intl, MX
   349 MUC  10870   48.35   11.78  448 Munich Intl., Germany 
@@ -1999,7 +1999,7 @@
  1358 MUN  
  1975 MVD  
  1470 MVI  
-  281 MWC      0   43.12  -88.05  227 Milwaukee/Tmmrmn, WI
+  281 MWC      0   43.12  -88.05  227 Milwaukee, WI (Timmerman Apt.)
  1084 MWCR     0   19.30  -81.30    3 Grand Cayman
  2260 MWH  
   615 MXF      0   32.38  -86.37   51 Maxwell AFB, AL
@@ -2023,7 +2023,7 @@
  2627 NDB  
  2840 NDY  
  2791 NED  
-  605 NEW      0   30.03  -90.03   3  New Orleans/Lkfr, LA
+  605 NEW      0   30.03  -90.03   3  New Orleans, LA (Lakefront Apt.)
   315 NFFN 91680  -17.75  177.45   18 Nandi/Nadi Intl FJ
  3056 NFW  
  2781 NGA  
@@ -2080,7 +2080,7 @@
  1378 OBBI     0   26.27   50.63    2 Bahrain, Bahrain
  1708 OBG  43295  12.95 77.67  888 Bangalore, IN 
   894 ODN  
- 2960 ODO      0  31.92 -102.39 914 Odessa-Schlmyr Fld, TX/US
+ 2960 MAF      0  31.94 -102.20  875 Midland, TX
  2500 OEAB  41112   18.23   42.65 2090 Abha, SD
  2490 OEAH  40420   25.30   49.48  179 Al-Ahsa, SD
  2497 OEBA  41055   20.30   41.65 1672 Baha, SD
@@ -2109,7 +2109,7 @@
  2487 OEWJ  40400   26.20   36.48   20 Al-Wejh, SD
  2494 OEYN  40439   24.13   38.07    8 Yanbu, SD
  2009 OFW  
-  110 OGG  10003   20.90 -156.43 0015 Kahului, Maui, HI
+  110 OGG  10003   20.90 -156.43 0015 Kahului, HI
  2820 OIFM 
  2803 OIIE 
  1392 OIII 40754   35.69   51.31 1208 Tehran/Mehrabad, Iran
@@ -2123,7 +2123,7 @@
  1857 OJJ  
   407 OKA      0    0       0  
  1385 OKBK 40582   29.23   47.98   63 Kusait, Kuwait
-  111 OKC  72353   35.40  -97.60 0392 Ok City/W.Rogers, OK
+  111 OKC  72353   35.40  -97.60 0392 Oklahoma City, OK
   398 OKD      0    0       0  
   596 OKE      0    0       0  
  1657 OKF  
@@ -2137,7 +2137,7 @@
  2928 OLB   16531 40.89 9.52 11 Olbia, IT
  1416 OLBA 40100   33.81   35.49   27 Beirut Intl, Lebanon
  2539 OLM  
-  112 OMA  72550   41.30  -95.90 0299 Omaha/Eppley, NE
+  112 OMA  72550   41.30  -95.90 0299 Omaha, NE
  1371 OMAA 41217   24.43   54.65   27 Abu Dhabi, UAE
  1372 OMAD 41216   24.43   54.46    5 Bateen, UAE
  1381 OMDB 41194   25.25   55.36   10 Dubai, UAE
@@ -2155,16 +2155,16 @@
  3061 OOY  
   620 OPA      0    0       0  
  2836 OPD  
-  614 OPF      0   25.90  -80.28    3 Miami/Opa Locka, FL 
+  614 OPF      0   25.90  -80.28    3 Miami, FL (Opa Locka Apt.)
  1306 OPO  
  1887 OPPX 
  1399 OPRN 41571   33.62   73.10  508 Islamabad/Chaklala, Pakistan
   852 OQQ  
-  114 ORD  72530   41.98  -87.90 0203 Chicago/Ohare, IL
+  114 ORD  72530   41.98  -87.90 0203 Chicago, IL (O'Hare Apt.)
  1871 ORD! 
  2841 ORD0 
-  292 ORF      0   37.13  -76.49   13 Newport News/Wlmsbg, VA
-  115 ORL  90021   28.55  -81.33 0034 Orlando-Herndon, FL
+  292 ORF      0   37.13  -76.49   13 Norfolk, VA
+  115 ORL  90021   28.55  -81.33 0034 Orlando, FL (Herndon Apt.)
  2719 ORR  
   636 ORT      0    0       0   
  1087 OSDI     0   33.30   36.50  615 Damascus
@@ -2186,7 +2186,7 @@
  2174 PAH      0   37.06  -88.77 0124 Barkley Regional
  2907 AKU     0  70.32  -149.59  20   KUPARUK ARPT, AK 
   225 PAN      0    0       0   
-  598 ANC 70273   61.17  -150.02  40 Anchorage Intl, AK
+  598 ANC 70273   61.17  -150.02  40 Anchorage, AK
  1810 PAP  
  2646 PAX  
  2785 PAZ  
@@ -2196,7 +2196,7 @@
   116 PBI  72203   26.68  -80.12 0007 West Palm Beach, FL
  1302 PBJ  
  2526 PBP  
- 2855 PBV      0  56.6   -169.7   38   ST. GEORGE, AK
+ 2855 PBV      0  56.6   -169.7   38   St. George, AK
  1820 PCL  
  1720 PDC  
  2623 PDI  
@@ -2219,25 +2219,25 @@
   351 HKO     0   19.73 -156.05   13 Keahole Kona Intl, HI
   119 PHL  72408   39.92  -75.18 0005 Philadelphia, PA
  1465 HN? 
-  284 HNL 91182   21.35 -157.93    5 Honolulu Intl, HI  
+  284 HNL 91182   21.35 -157.93    5 Honolulu, HI  
  1499 PHO? 
-  624 HOG 91190   20.90 -156.43   20 Kahului Airport, HI
+  624 HOG 91190   20.90 -156.43   20 Kahului, HI
  2815 PHP  
  1987 HTO 
-  120 PHX  72278   33.43 -112.02 0337 Phoenix/Sky Hrbr, AZ
+  120 PHX  72278   33.43 -112.02 0337 Phoenix, AZ
   121 PIA  72532   40.67  -89.68 0200 Peoria, IL
  2171 PIB      0   31.47  -89.34 0090 Hattiesburg-laurel Regional
-  226 PIE  72211   27.97  -82.53    3 Tampa/St. Petersburg, FL
+  226 PIE  72211   27.97  -82.53    3 St. Petersburg, FL
  1880 PIH  
   378 PIM      0  -12.00  -77.10   13 Lima
- 2170 PIR      0   44.38 -100.29 0530 Pierre Regional
+ 2170 PIR      0   44.38 -100.29 0530 Pierre, SD
   122 PIT  72520   40.53  -80.23 0359 Pittsburgh, PA
   330 PJFK     0    0       0  
  2619 PJM  
  1954 PJU  
   519 PKA      0  -20.72  116.77    9 Karratha 
  1267 PKB  
-  766 PKD      0   46.90  -95.07 440  Park Rapids Muni, MN 
+  766 PKD      0   46.90  -95.07 440  Park Rapids, MN 
  1505 PKL  
   554 PKM      0    0       0   
  2888 PKP  
@@ -2246,7 +2246,7 @@
  1490 PLC  
  2286 PLD  
   581 PLL      0    0       0   
- 2168 PLN      0   45.57  -84.80 0219 Pellston Arpt.
+ 2168 PLN      0   45.57  -84.80 0219 Pellston, MI
  1549 PLS  
  2701 PLZ  
  1702 PMD  
@@ -2256,7 +2256,7 @@
  3098 PNA  
   859 PNL  
  2699 PNS  
- 2956 PNS  72222  30.47  -87.20  36 Pensacola, FL/US
+ 2956 PNS  72222  30.47  -87.20  36 Pensacola, FL
  1699 POB  
  1638 POP  
  1544 POS  
@@ -2284,9 +2284,9 @@
  1669 PUG  
  1553 PUJ  
  1818 PUN  
- 2835 PUO      0  70.25  -148.34  14   PRUDHOE BAY, AK
+ 2835 PUO      0  70.25  -148.34  14   Prudhoe Bay, AK
  1930 PUS  
-  126 PVD  72507   41.73  -71.43 0019 Providence/Green, RI
+  126 PVD  72507   41.73  -71.43 0019 Providence, RI
  1351 PVG  98558   11.03  125.73   60 Guiuan/Samar,PH
  2071 PVN  
   548 PVR  76601   20.68 -105.25    6 Puerto Vallarta, MX
@@ -2318,7 +2318,7 @@
  2505 QUI  
  2327 QVL  
  1766 R3W  
-  545 RAP  72662   44.05 -103.07  970 Rapid City Rgnl, SD
+  545 RAP  72662   44.05 -103.07  970 Rapid City, SD
  2694 RBB  
  2527 RCA  
  1418 RCKH 46740   22.58  120.35    9 Kaohsiung Intl, Taiwan
@@ -2326,15 +2326,15 @@
  2669 RCY  
  2599 RDD  
  2429 RDF  
-  129 RDU  72306   35.87  -78.78 0134 Raleigh-Durham, NC
+  129 RDU  72306   35.87  -78.78 0134 Raleigh/Durham, NC
  2622 REA  
  2654 RED  
  1497 REE  
  1226 RFC  
   130 RFD  72543   42.20  -89.10 0226 Rockford, IL
- 2166 RHI      0   45.63  -89.47 0494 Rhinelander-oneida County
+ 2166 RHI      0   45.63  -89.47 0494 Rhinelander, WI
  1924 RHL  
-  131 RIC  72401   37.50  -77.33 0054 Richmond/Byrd, VA
+  131 RIC  72401   37.50  -77.33 0054 Richmond, VA
  2105 RIN  
  2875 RIT  
  1663 RIV  
@@ -2387,11 +2387,11 @@
  2277 RMY  
  3135 RND  
  1953 RNG  
-  133 RNO  72488   39.50 -119.78 1341 Reno/Cannon Intl, NV
+  133 RNO  72488   39.50 -119.78 1341 Reno, NV
  1207 RNP  
   134 ROA  72411   37.32  -79.97 0358 Roanoke, VA
   135 ROAH 47936   26.20  127.68 0053 Naha Airport, JP
-  136 ROC  72529   43.12  -77.67 0169 Rochester/Monroe, NY
+  136 ROC  72529   43.12  -77.67 0169 Rochester, NY
  2061 ROO  
  1122 ROOD 
  2564 ROST  10170   54.18   12.08   10 Rostock, Germany
@@ -2408,7 +2408,7 @@
  2868 RSO  
  1885 RSSO 
   137 RST  72644   43.92  -92.50 0402 Rochester, MN
-  244 RSW      0   26.65  -81.87    9 Ft Myers/SW, FL 
+  244 RSW      0   26.65  -81.87    9 Ft. Myers, FL 
  3062 RUH  
  2943 RVN   0     66.56 25.83 196 Rovaniemi, FI
   730 S00      0    0       0   
@@ -2418,9 +2418,9 @@
   234 SAEZ 87576  -34.82  -58.53   20 Buenos Aires-Ezeiza, AG
   138 SAL  90023   13.44  -89.08 0101 San Salvador, ES (Unofcl)
   622 SAME 87418  -32.83  -68.78  704 Mendoza/El Plum, AG
-  139 SAN  72290   32.73 -117.17 0009 Sn Diego/Lndbrgh, CA
+  139 SAN  72290   32.73 -117.17 0009 San Diego, CA
   286 SAP      0   15.50  -88.02 9999 San Pedro Sula, HN
-  140 SAT  72253   29.53  -98.47 0242 San Antonio Intl, TX
+  140 SAT  72253   29.53  -98.47 0242 San Antonio, TX
   282 SAV  72207   32.13  -81.20   15 Savannah, GA 
  2794 SAX  
   141 SBA  90033   34.43 -119.83 0006 Santa Barbara, CA
@@ -2455,7 +2455,7 @@
  2615 SFB  
   813 SFD  
  2308 SFN  
-  147 SFO  72494   37.62 -122.38 0005 Sn Francisco Int, CA
+  147 SFO  72494   37.62 -122.38 0005 San Francisco, CA
  2800 SFQ  
  2684 SFS  
   693 SGAS 86218  -25.27  -57.63   10 Asuncion/Silvio, PY
@@ -2464,7 +2464,7 @@
   579 SHA      0    0       0   
   360 SHJ  41196   25.33   55.52   33 Sharjah, U.A.Emirates
  1169 SHR  
-  149 SHV  72248   32.47  -93.82 0079 Shreveport Rgnl, LA
+  149 SHV  72248   32.47  -93.82 0079 Shreveport, LA
  1579 SIA  
  1944 SIC  
   150 SIN  99041    1.37  103.85 0016 Singapore/Chang, SN
@@ -2479,7 +2479,7 @@
   151 SJT  72263   31.37 -100.50 0582 San Angelo, TX
   152 SJU  78526   18.43  -66.00 0019 San Juan, PR
  1773 SJV  
-  422 SKA      0   47.62 -117.65  750 Spokane/Frchild, WA
+  422 SKA      0   47.62 -117.65  750 Fairchild AFB, WA
   531 SKB      0    0       0  
   734 SKBQ 80028   10.90  -74.77   10 Barranquilla,Columbia
   439 SKC      0    0       0 
@@ -2504,24 +2504,24 @@
  2666 SLU  
  2788 SMA  
  1506 SME  
-  154 SMF  90027   38.70 -121.60 0010 Sacramento Metro, CA
+  154 SMF  90027   38.70 -121.60 0010 Sacramento, CA
  1586 SMS  
   155 SMX  72394   34.90 -120.45 0073 Santa Maria, CA
  1095 SMZO     0    5.40  -55.20    0 Paramaribo
-  156 SNA  90039   33.67 -117.88 0016 Santa Ana/Jw, CA
+  156 SNA  90039   33.67 -117.88 0016 Santa Ana, CA
  1883 SNN  
- 2854 SNP  70308  57.2   -170.2   19   ST. PAUL ISLAND, AK
+ 2854 SNP  70308  57.2   -170.2   19   St. Paul Island, AK
  1425 SOCA 81405    4.82  -52.36    8 Rochambeau/Cayenne, French Guiana
  1759 SOF  
  2112 SOL  
  3125 SOQ  
  1510 SPD      0   31.14  121.79    3 Shanghai/Pudong 
-  260 SPI  72439   39.85  -89.67  187 Springfield/Cptl, IL 
+  260 SPI  72439   39.85  -89.67  187 Springfield, IL 
  1096 SPIM     0  -12.00  -77.10   13 Lima
  2826 SPL  
  1339 SPN  
  1289 SPO  
-  583 SPS  72351   33.97  -98.48  314 Sheppard Afb, TX 
+  583 SPS  72351   33.97  -98.48  314 Wichita Falls, TX 
  2641 SQD  54857  36.26  120.38   10  Qingdao/Liuting, CI 
   638 SRD      0    0       0  
   296 SRQ      0   27.40  -82.55    7 Sarasota, FL  
@@ -2532,10 +2532,10 @@
   316 SSS      0   -5.90  147.95 9999 Siassi, Papua New Guinea
  1827 SST  
   840 SSY  94767  -33.95  151.18    3 Sydney Intl, NW 
- 2158 STC      0   45.55  -94.06 0313 St Cloud Regional
+ 2158 STC      0   45.55  -94.06 0313 St. Cloud, MN
  2474 STD  
  1865 STI  
-  157 STL  72434   38.74  -90.36 0184 Saint Louis, MO
+  157 STL  72434   38.74  -90.36 0184 St. Louis, MO
  3128 STLP 
   235 STN  03683   51.88    0.23  106 London-Stansted, UK
   725 STT      0   18.33  -64.97    4 Charlotte Amali, VI/US 
@@ -2545,17 +2545,17 @@
  1972 SUJ  
   307 SUMU     0  -34.78  -56.13 9999 Montevideo, Uruguay
  3114 SUU  
- 2156 SUX      0   42.40  -96.38 0334 Sioux Gateway/Col. Bud Day Field
+ 2156 SUX      0   42.40  -96.38 0334 Sioux City, IA
   274 SVM      0    0       0
  1097 SVMI     0   10.60  -66.90   47 Caracas
  1636 SVN  
-  158 SWF  90028   41.50  -74.10 0143 Stewart/Newburgh, NY
+  158 SWF  90028   41.50  -74.10 0143 Newburgh, NY
  2704 SWO  
   571 SXM      0    0       0  
  2365 SXN  
  3083 SXR  
   251 SYD  94767  -33.95  151.18    3 Sydney Intl, AU
-  159 SYR  72519   43.12  -76.12 0128 Syracuse/Hancock, NY
+  159 SYR  72519   43.12  -76.12 0128 Syracuse, NY
  3097 SZB  
  3072 SZH  
  1741 SZL  
@@ -2613,13 +2613,13 @@
  1517 TNCC 78988   12.19  -68.96    9 Curacao, Neth. Antilles
  1518 TNCM 78866   18.04  -63.11    4 St. Maarten, Neth. Antilles
  2155 TOL      0   41.59  -83.81 0208 Toledo Express
-  161 TPA  72211   27.97  -82.53 0003 Tampa/St. Petersburg, FL
+  161 TPA  72211   27.97  -82.53 0003 Tampa, FL
   222 TPE  46686   25.08  121.22   33 Taipei - Chiang Kaisek, TW
  1979 TPK  
  2031 TPO  
  1558 TPP      0   10.60  -61.34   17 Port of Spain/Piarco, TT 
  1456 TRF  
- 2154 TRI      0   36.48  -82.41 0462 Tri-cities Rgnl Tn/va
+ 2154 TRI      0   36.48  -82.41 0462 Tri-Cities, TN/VA
  1725 TRS  
  2923 TSE   35188  51.02  71.47  355 Astana Intl, KZ
  1395 TSF  
@@ -2635,13 +2635,13 @@
  1674 TTPP     0   10.60  -61.34   17 Port of Spain/Piarco, TT
  2504 TTT  38457   41.26   69.28  431 Tashkent/Yuzhny, Uzbekistan 
   162 TUL  72356   36.20  -95.90 0206 Tulsa, OK
- 2153 TUP      0   34.27  -88.77 0105 Tupelo Rgnl
+ 2153 TUP      0   34.27  -88.77 0105 Tupelo, MS
   163 TUS  72274   32.12 -110.93 0787 Tucson, AZ
- 2152 TVC      0   44.74  -85.58 0190 Cherry Capital
- 2151 TVF      0   48.07  -96.18 0340 Thief River Falls Regional
+ 2152 TVC      0   44.74  -85.58 0190 Traverse City, MI
+ 2151 TVF      0   48.07  -96.18 0340 Thief River Falls, MN
  1643 TWF  
  1971 TXF  
-  200 TXK      0   33.45  -94.00  122 Texarkana Muni, AR
+  200 TXK      0   33.45  -94.00  122 Texarkana, AR
   164 TYO  47662   35.68  139.77 0036 Narita, Tokyo, JP
   165 TYS  72326   35.82  -83.98 0299 Knoxville, TN
  1100 UAAA     0   43.20   76.90  851 Almaty, Kazakhstan
@@ -2750,16 +2750,16 @@
   169 WJF  90032   34.73 -118.22 0728 Lancaster, CA
   503 WKA      0    0       0  
   499 WKB      0  -36.323 142.418 121 Warracknabeal
-  448 WKC  71075   58.18 -103.68  492 Collins Bay, SK/CN 
-  563 WKD  71382   50.73  -71.02  497 Parc Des Laurn, QB/CN
+  448 WKC  71075   58.18 -103.68  492 Collins Bay, SK
+  563 WKD  71382   50.73  -71.02  497 Parc Des Laurn, QC
   482 WKF      0    0       0   
   498 WKJ      0    0       0   
   454 WKL      0    0       0   
-  434 WKM      0   69.62 -140.20   13 Komakuk Beach, YK/CN
-  509 WKO  71135   49.17 -105.98  917 Rockglen, SK/CN
+  434 WKM      0   69.62 -140.20   13 Komakuk Beach, YK
+  509 WKO  71135   49.17 -105.98  917 Rockglen, SK
   505 WKP      0    0       0   
  1353 WKR      0   43.97  -79.57  390 King Radar Site, CN 
-  427 WKS      0   52.25 -122.72  937 Sikanni Chief, BC/CN
+  427 WKS      0   52.25 -122.72  937 Sikanni Chief, BC
   556 WKT      0    0       0   
  1835 WKV  
   833 WLLX 
@@ -2795,8 +2795,7 @@
  1364 XKS  
   749 XKT      0    0       0  
   762 XMM      0    0       0  
- 2149 XNA      0   36.28  -94.31 0392 Northwest Arkansas Rgnl
- 1243 XNN      0   36.28  -94.30  392 NW Arkansas Rgnl Arpt, AR
+ 2149 XNA      0   36.28  -94.31 0392 Fayetteville/Springdale, AR
  1891 XSSO 
  1282 XXX  57558  29.13 110.47  184  Zhangjaijie/Hehua, CI 
  1283 XYY  
@@ -2816,9 +2815,9 @@
  1272 YHU  
   756 YKA  71887   50.70 -120.45  346 Kamloops, BC
   853 YKC  
- 1352 YKD      0   68.22 -135.00    7 Aklavik Airport, NW/CN
+ 1352 YKD      0   68.22 -135.00    7 Aklavik Airport, NW
  2257 YKF      0   43.45  -80.48 0316 Kitchener
-  759 YKL  71828   54.80  -66.80  522 Schefferville, QB 
+  759 YKL  71828   54.80  -66.80  522 Schefferville, QC
   893 YKP  
   761 YKS      0    0       0
   790 YKT  
@@ -2839,8 +2838,8 @@
  1147 YPKG     0  -30.78  121.45  367 Kalgoorlie
  1148 YPPH     0  -31.93  115.95   29 Perth
  2269 YQB  
- 2255 YQR      0   50.43 -104.67 0577 Regina Municipal
- 2254 YQT      0   48.38  -89.25 0199 Thunder Bay
+ 2255 YQR      0   50.43 -104.67 0577 Regina Municipal, SK
+ 2254 YQT      0   48.38  -89.25 0199 Thunder Bay, ON
   850 YQX  
  1197 YRR  
  1149 YSCB     0  -35.30  149.18  580 Canberra
@@ -2848,19 +2847,19 @@
  1203 YSNF 94996  -29.033 167.933 113 Norfolk Island
   758 YSSY 94767  -33.95  151.18    3 Sydney Intl, NW 
  1746 YTL  54662   38.96  121.54   33  Dalian/Zhoushuizi, C  
-  745 YUL  71627   45.47  -73.75   30 Montreal/Dorval, QB/CN
+  745 YUL  71627   45.47  -73.75   30 Montreal, QC (Trudeau Apt.)
  1745 YUM  
-  754 YVR  71892   49.18 -123.18    2 Vancouver Intl, BC/CN
- 2252 YWG  71852   49.91  -97.23  239 Winnipeg, MB/CN
+  754 YVR  71892   49.18 -123.18    2 Vancouver, BC
+ 2252 YWG  71852   49.91  -97.23  239 Winnipeg, MB
  1088 YXE  
  1270 YXJ  
- 2251 YXU      0   43.03  -81.15 0277 London Municipal
-  746 YYC  71877   51.12 -114.02 1084 Calgary Intl, AB/CN
+ 2251 YXU      0   43.03  -81.15 0277 London, ON
+  746 YYC  71877   51.12 -114.02 1084 Calgary, AB
  2881 YYF  
  1191 YYR  
  3063 YYT  
  1997 YYY  
-  753 YYZ  71624   43.68  -79.63  176 Toronto Intl, ON/CN
+  753 YYZ  71624   43.68  -79.63  176 Toronto, ON
  1832 YZF  
   755 ZBAA 54511   40.08  116.60   35 Beijing/Peking, CI
  1256 ZBTJ 
