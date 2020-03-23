@@ -530,7 +530,7 @@
   703 ATW      0   44.25  -88.52  280 Appleton, WI 
  2242 ATY      0   44.91  -97.15 0532 Watertown Muni
  1093 AUA  
-   10 AUS  72254   30.30  -97.70 0189 Austin/Mueller, TX
+  267 AUS  72254   30.20  -97.68  165 Austin/Bergstrom, TX
   743 AVL  72315   35.43  -82.55  661 Asheville Rgnl, NC 
  1281 AZE  
  2241 AZO      0   42.23  -85.55 0266 Kalamazoo/Battle Creek International
@@ -624,7 +624,6 @@
   272 BRU  06451   50.90    4.53   58 Brussels National Apt, BX
  3117 BRV  
  2763 BSJ  
-  267 BSM      0   30.20  -97.68  165 Bergstrom AFB, TX
   812 BSN  
  3074 BSV  
  2472 BTL      0  -19.25  146.75    9 Townsville
@@ -1404,7 +1403,6 @@
   187 KAT      0    0       0 
  1360 KATL
   380 KAU      0    0       0   
- 1335 AUS  72254   30.30  -97.70 0189 Austin/Mueller, TX
  1543 KAUW
  2825 KAX  
  1717 KAY  
