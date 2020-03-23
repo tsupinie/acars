@@ -1643,7 +1643,6 @@
   347 KTL      0    0       0   
  1413 TLH
   215 KTP      0    0       0   
- 1404 TPA
  2054 TPW 
  2940 KTT   02723 67.70 24.85 196 Kittila, FI
   362 KTU     0   36.42  127.30   58 Chungju, KO
@@ -1858,7 +1857,6 @@
   382 MAA  43279   13.00   80.18   16 Madras, India 
  2740 MAC  
   880 MAD  41216   24.43   54.46    5 Bateen, UAE  
- 1188 MAF  
  1315 MAN  
   627 MAO  
  1988 MAR  
@@ -2227,7 +2225,6 @@
   120 PHX  72278   33.43 -112.02 0337 Phoenix, AZ
   121 PIA  72532   40.67  -89.68 0200 Peoria, IL
  2171 PIB      0   31.47  -89.34 0090 Hattiesburg-laurel Regional
-  226 PIE  72211   27.97  -82.53    3 St. Petersburg, FL
  1880 PIH  
   378 PIM      0  -12.00  -77.10   13 Lima
  2170 PIR      0   44.38 -100.29 0530 Pierre, SD
@@ -2613,7 +2610,7 @@
  1517 TNCC 78988   12.19  -68.96    9 Curacao, Neth. Antilles
  1518 TNCM 78866   18.04  -63.11    4 St. Maarten, Neth. Antilles
  2155 TOL      0   41.59  -83.81 0208 Toledo Express
-  161 TPA  72211   27.97  -82.53 0003 Tampa, FL
+  226 TPA  72211   27.97  -82.53 0003 Tampa, FL
   222 TPE  46686   25.08  121.22   33 Taipei - Chiang Kaisek, TW
  1979 TPK  
  2031 TPO  
