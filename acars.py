@@ -230,14 +230,14 @@ def get_times(work_path):
     # Figure out the files and their update times from the MADIS server
     txt = urlreq.urlopen(_base_url).read().decode('utf-8')
     files = re.findall(">([\d]{8}_[\d]{4}).gz<", txt)
-    update_times = re.findall("([\d]{2}-[\w]{3}-[\d]{4} [\d]{2}:[\d]{2})", txt)
+    update_times = re.findall("([\d]{4}-[\d]{2}-[\d]{2} [\d]{2}:[\d]{2})", txt)
 
     # If a MADIS server file is newer than the corresponding marker file, add it to the list of times to download
     times_to_dl = []
     for file_time_str, update_time_str in zip(files, update_times):
         marker_fname = "%s/%s.txt" % (marker_path, file_time_str)
 
-        update_time = datetime.strptime(update_time_str, '%d-%b-%Y %H:%M')
+        update_time = datetime.strptime(update_time_str, '%Y-%m-%d %H:%M')
         file_time = datetime.strptime(file_time_str, '%Y%m%d_%H%M')
 
         if not os.path.exists(marker_fname) or (os.path.exists(marker_fname) 
